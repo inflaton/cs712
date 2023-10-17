@@ -49,7 +49,7 @@ class JigsawDataset(Dataset):
     def __getitem__(self, idx):
         puzzle = self.data[idx]
         label = self.labels[idx]
-        return puzzle, label * images_per_data_point + idx % images_per_data_point
+        return puzzle, label
 
 
 # Load the labels
@@ -68,11 +68,11 @@ class JigsawModel(nn.Module):
     def __init__(self, num_positions):
         super(JigsawModel, self).__init__()
         self.num_positions = num_positions
-        self.fc1 = nn.Linear(36 * 2048, 8192)
-        self.fc2 = nn.Linear(8192, 4096)
-        self.fc3 = nn.Linear(4096, 2048)
-        self.fc4 = nn.Linear(2048, num_positions)
-        self.bn4 = nn.BatchNorm1d(num_positions)  # Batch normalization after fc4
+        self.fc1 = nn.Linear(36 * 2048, 1024)
+        self.fc2 = nn.Linear(1024, 512)
+        self.fc3 = nn.Linear(512, 128)
+        self.fc4 = nn.Linear(128, 50)
+        self.bn4 = nn.BatchNorm1d(50)  # Batch normalization after fc4
 
     def forward(self, x):
         x = x.view(-1, 36 * 2048)
@@ -87,7 +87,7 @@ class JigsawModel(nn.Module):
 
 
 # Create the model
-model = JigsawModel(num_positions=num_classes * images_per_data_point).to(device)
+model = JigsawModel(num_positions=num_classes).to(device)
 
 # Define the optimizer and loss function
 optimizer = optim.Adam(model.parameters(), lr=0.001)
