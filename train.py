@@ -90,16 +90,53 @@ class JigsawModel(nn.Module):
         self.fc4 = nn.Linear(128, 50)
         self.bn4 = nn.BatchNorm1d(50)  # Batch normalization after fc4
 
+        self.fc5 = nn.Linear(128, 36)
+        self.bn5 = nn.BatchNorm1d(36)  # Batch normalization after fc5
+
     def forward(self, x):
         x = x.view(-1, 36 * 2048)
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
-        x = F.relu(
+
+        c = F.relu(
             self.bn4(self.fc4(x))
         )  # Apply batch normalization after fc4 and before activation
-        x = F.softmax(x, dim=1)
-        return x
+        c = F.softmax(c, dim=1)
+
+        p = None
+
+        if self.training:
+            p = F.relu(self.bn5(self.fc5(x)))
+            p = torch.argsort(p)
+
+        return c, p
+
+
+class JigsawLoss(nn.Module):
+    def __init__(self, device, alpha=0.5):
+        super().__init__()
+        pos_labels = [i for i in range(36)]
+        self.pos_labels = torch.FloatTensor(pos_labels).to(device)
+        self.alpha = alpha
+        self.criterion = nn.CrossEntropyLoss()
+
+    def forward(self, outputs, labels):
+        perm_pred, pos_pred = outputs
+
+        loss = self.criterion(perm_pred.float(), labels)
+
+        if pos_pred is not None:
+            loss = (1 - self.alpha) * loss
+
+            position_loss = 0
+
+            for pos in pos_pred:
+                position_loss += self.criterion(pos.float(), self.pos_labels)
+
+            loss += self.alpha * position_loss
+
+        return loss
 
 
 # Create the model
@@ -107,7 +144,7 @@ model = JigsawModel(num_positions=num_classes).to(device)
 
 # Define the optimizer and loss function
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-criterion = nn.CrossEntropyLoss()
+criterion = JigsawLoss(device)
 
 
 def train_model(model, train_loader, val_loader, optimizer, num_epochs):
@@ -123,13 +160,13 @@ def train_model(model, train_loader, val_loader, optimizer, num_epochs):
             puzzle, label = puzzle.to(device), label.to(device)
             optimizer.zero_grad()
             outputs = model(puzzle)
-            loss = criterion(outputs.float(), label)
+            loss = criterion(outputs, label)
             loss.backward()
             optimizer.step()
             total_loss += loss.item()
 
             # Calculate accuracy for this batch
-            _, predicted = torch.max(outputs, 1)
+            _, predicted = torch.max(outputs[0], 1)
             total_predictions += label.size(0)
             correct_predictions += (predicted == label).sum().item()
 
@@ -154,7 +191,7 @@ def train_model(model, train_loader, val_loader, optimizer, num_epochs):
                 val_loss.append(batch_loss_value)
 
                 # Calculate accuracy for this batch
-                _, predicted = torch.max(outputs, 1)
+                _, predicted = torch.max(outputs[0], 1)
                 total_predictions += targets.size(0)
                 correct_predictions += (predicted == targets).sum().item()
 
@@ -199,7 +236,7 @@ def evaluate_model(model, data_loader):
     with torch.no_grad():
         for puzzle in data_loader:
             puzzle = puzzle.to(device)
-            output = model(puzzle)
+            output, _ = model(puzzle)
             _, predicted = torch.max(
                 output, 1
             )  # Get the index of the max log-probability
