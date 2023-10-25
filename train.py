@@ -1,4 +1,6 @@
+import os
 import random
+import re
 import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader, Subset, random_split
@@ -108,13 +110,13 @@ class JigsawModel(nn.Module):
 
         if self.training:
             p = F.relu(self.bn5(self.fc5(x)))
-            p = torch.argsort(p)
+            p = F.softmax(p, dim=1)
 
         return c, p
 
 
 class JigsawLoss(nn.Module):
-    def __init__(self, device, alpha=0.5):
+    def __init__(self, device, alpha=0.002):
         super().__init__()
         pos_labels = [i for i in range(36)]
         self.pos_labels = torch.FloatTensor(pos_labels).to(device)
@@ -134,9 +136,32 @@ class JigsawLoss(nn.Module):
             for pos in pos_pred:
                 position_loss += self.criterion(pos.float(), self.pos_labels)
 
-            loss += self.alpha * position_loss
+            loss += self.alpha * position_loss / len(pos_pred)
 
         return loss
+
+
+# save checkpoint function
+def checkpoint_save(model, save_path, epoch):
+    os.makedirs(save_path, exist_ok=True)
+    filename = "checkpoint-{:03d}.pth".format(epoch)
+    f = os.path.join(save_path, filename)
+    torch.save(model.state_dict(), f)
+    print("saved checkpoint:", f, flush=True)
+
+
+def checkpoint_delete(save_path, epoch):
+    filename = "checkpoint-{:03d}.pth".format(epoch)
+    f = os.path.join(save_path, filename)
+    os.remove(f)
+
+
+# save checkpoint function
+def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
+    filename = "checkpoint-{:03d}.pth".format(epoch)
+    f = os.path.join(save_path, filename)
+    model.load_state_dict(torch.load(f))
+    print("loaded checkpoint:", f, flush=True)
 
 
 # Create the model
@@ -148,6 +173,8 @@ criterion = JigsawLoss(device)
 
 
 def train_model(model, train_loader, val_loader, optimizer, num_epochs):
+    save_path = os.path.join(os.getcwd(), "data", "checkpoints/")
+
     highest_accuracy = 0
     best_epoch = 0
     for epoch in range(num_epochs):
@@ -207,10 +234,18 @@ def train_model(model, train_loader, val_loader, optimizer, num_epochs):
                 highest_accuracy = accuracy
                 best_epoch = epoch
 
+            checkpoint_save(model, save_path, epoch)
+
     print(
         f"Best epoch {best_epoch + 1}, Highest Validation Accuracy: {highest_accuracy * 100:.2f}%",
         flush=True,
     )
+
+    for _, _, files in os.walk(save_path):
+        for filename in files:
+            checkpoint = int(re.split("[-.]", filename)[-2])
+            if checkpoint != best_epoch:
+                checkpoint_delete(save_path, checkpoint)
 
 
 # Train the model
@@ -230,6 +265,13 @@ class JigsawValidationDataset(Dataset):
 
 
 def evaluate_model(model, data_loader):
+    save_path = os.path.join(os.getcwd(), "data", "checkpoints/")
+
+    for _, _, files in os.walk(save_path):
+        filename = files[0]
+        checkpoint = int(re.split("[-.]", filename)[-2])
+        checkpoint_load(model, save_path, checkpoint)
+
     model.eval()
     all_predictions = []  # To store translated predictions
 
