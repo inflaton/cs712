@@ -118,12 +118,13 @@ class JigsawModel(nn.Module):
 
 
 class JigsawLoss(nn.Module):
-    def __init__(self, device, alpha=0.1):
+    def __init__(self, device, alpha=0.5):
         super().__init__()
         pos_labels = [i for i in range(36)]
         self.pos_labels = torch.FloatTensor(pos_labels).to(device)
         self.alpha = alpha
         self.criterion = nn.CrossEntropyLoss()
+        self.cos = nn.CosineSimilarity(dim=0)
 
     def forward(self, outputs, labels):
         perm_pred, pos_pred = outputs
@@ -136,7 +137,8 @@ class JigsawLoss(nn.Module):
             position_loss = 0
 
             for pos in pos_pred:
-                position_loss += self.criterion(pos.float(), self.pos_labels)
+                position_loss += self.cos(pos.float(), self.pos_labels)
+                # print("position_loss:", position_loss)
 
             loss += self.alpha * position_loss / len(pos_pred)
 
