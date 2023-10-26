@@ -1,0 +1,9 @@
+torch
+torchvision
+pyyaml
+albumentations
+tqdm
+pandas
+matplotlib
+tensorboard
+thop
