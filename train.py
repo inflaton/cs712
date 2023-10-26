@@ -1,6 +1,8 @@
 import os
 import random
 import re
+import zipfile
+from pathlib import Path
 import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader, Subset, random_split
@@ -110,13 +112,13 @@ class JigsawModel(nn.Module):
 
         if self.training:
             p = F.relu(self.bn5(self.fc5(x)))
-            p = F.softmax(p, dim=1)
+            p = F.torch.argsort(p)
 
         return c, p
 
 
 class JigsawLoss(nn.Module):
-    def __init__(self, device, alpha=0.002):
+    def __init__(self, device, alpha=0.1):
         super().__init__()
         pos_labels = [i for i in range(36)]
         self.pos_labels = torch.FloatTensor(pos_labels).to(device)
@@ -288,7 +290,21 @@ def evaluate_model(model, data_loader):
     all_predictions = all_predictions.astype(int)
 
     # Save the predicted values to a text file
-    np.savetxt("data/validation.txt", all_predictions, fmt="%d")
+    filename = "data/validation.txt"
+    np.savetxt(filename, all_predictions, fmt="%d")
+
+    # compress the results folder
+    zip_filename = "data/result.zip"
+    path = Path(zip_filename)
+    if path.is_file():
+        os.remove(zip_filename)
+    with zipfile.ZipFile(zip_filename, "w") as zipf:
+        zipf.write(filename, arcname="validation.txt")
+
+    print(f"results saved to: {zip_filename}")
+
+    # with zipfile.ZipFile(zip_filename) as zf:
+    # print(zf.namelist())
 
 
 validation_data = np.load(f"data/preprocessed_validation.npy")
