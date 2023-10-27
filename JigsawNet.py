@@ -12,6 +12,10 @@ class JigsawNet(nn.Module):
         self.fc3 = nn.Linear(16384, 4096)
         self.fc4 = nn.Linear(4096, n_classes)
         self.bn4 = nn.BatchNorm1d(n_classes)  # Batch normalization after fc4
+        # self.fc5 = nn.Sequential(
+        # nn.Dropout(0.1),
+        # nn.Linear(in_features=n_classes, out_features=n_classes),
+        # )
 
     def process_features(self, x):
         res = []
@@ -42,6 +46,8 @@ class JigsawNet(nn.Module):
         x = F.relu(
             self.bn4(self.fc4(x))
         )  # Apply batch normalization after fc4 and before activation
+
+        # x = self.fc5(x)
         x = F.softmax(x, dim=1)
 
         return x

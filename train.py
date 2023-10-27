@@ -54,7 +54,6 @@ class JigsawModel(nn.Module):
 
 # save checkpoint function
 def checkpoint_save(model, save_path, epoch):
-    os.makedirs(save_path, exist_ok=True)
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
     torch.save(model.state_dict(), f)
@@ -75,16 +74,27 @@ def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
     print("loaded checkpoint:", f, flush=True)
 
 
-def train_model(model, train_loader, val_loader, optimizer, criterion, num_epochs):
+def train_model(
+    model, train_loader, val_loader, optimizer, scheduler, criterion, num_epochs
+):
     save_path = os.path.join(os.getcwd(), "data", "checkpoints/")
+    os.makedirs(save_path, exist_ok=True)
+    for _, _, files in os.walk(save_path):
+        for filename in files:
+            checkpoint = int(re.split("[-.]", filename)[-2])
+            checkpoint_delete(save_path, checkpoint)
 
     highest_accuracy = 0
-    best_epoch = 0
+    best_epoch = -1
+
     for epoch in range(num_epochs):
         model.train()
         total_loss = 0.0
         correct_predictions = 0
         total_predictions = 0
+
+        learning_rate = optimizer.state_dict()["param_groups"][0]["lr"]
+        print(f"Epoch {epoch + 1}, Learning rate: {learning_rate:.10f}", flush=True)
 
         for puzzle, label in train_loader:
             puzzle, label = puzzle.to(device), label.to(device)
@@ -100,10 +110,13 @@ def train_model(model, train_loader, val_loader, optimizer, criterion, num_epoch
             total_predictions += label.size(0)
             correct_predictions += (predicted == label).sum().item()
 
+        scheduler.step()
+
         avg_loss = total_loss / len(train_loader)
         accuracy = correct_predictions / total_predictions
         print(
-            f"Epoch {epoch + 1}, Training Loss: {avg_loss:.4f}, Training Accuracy: {accuracy * 100:.2f}%"
+            f"Epoch {epoch + 1}, Training Loss: {avg_loss:.4f}, Training Accuracy: {accuracy * 100:.2f}%",
+            flush=True,
         )
 
         # Validation for this epoch
@@ -134,16 +147,13 @@ def train_model(model, train_loader, val_loader, optimizer, criterion, num_epoch
             )
 
             if accuracy > highest_accuracy:
+                if best_epoch >= 0:
+                    checkpoint_delete(save_path, best_epoch)
+
                 highest_accuracy = accuracy
                 best_epoch = epoch
 
-            checkpoint_save(model, save_path, epoch)
-
-            for _, _, files in os.walk(save_path):
-                for filename in files:
-                    checkpoint = int(re.split("[-.]", filename)[-2])
-                    if checkpoint != best_epoch:
-                        checkpoint_delete(save_path, checkpoint)
+                checkpoint_save(model, save_path, epoch)
 
     print(
         f"Best epoch {best_epoch + 1}, Highest Validation Accuracy: {highest_accuracy * 100:.2f}%",
@@ -265,10 +275,13 @@ if __name__ == "__main__":
 
     # Define the optimizer and loss function
     optimizer = optim.Adam(model.parameters(), lr=0.001)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=18, gamma=0.5)
     criterion = nn.CrossEntropyLoss()
 
     # Train the model
-    train_model(model, train_loader, val_loader, optimizer, criterion, num_epochs)
+    train_model(
+        model, train_loader, val_loader, optimizer, scheduler, criterion, num_epochs
+    )
 
     validation_data = np.load(f"data/preprocessed_validation.npy")
     validation_data = torch.from_numpy(validation_data).float()

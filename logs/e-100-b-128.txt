@@ -306,3 +306,6 @@ saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint
 Best epoch 17, Highest Validation Accuracy: 39.97%
 loaded checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-016.pth
 results saved to: data/result.zip
+
+submission results:
+9	0.393548	result.zip	10/26/2023 15:52:30	90931	Finished
