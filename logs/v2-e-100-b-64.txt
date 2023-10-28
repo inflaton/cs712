@@ -1,0 +1,16 @@
+loaded training data from: data/preprocessed_train_0.npy
+loaded training data from: data/preprocessed_train_1.npy
+loaded training data from: data/preprocessed_train_2.npy
+loaded training data from: data/preprocessed_train_3.npy
+loaded training data from: data/preprocessed_train_4.npy
+loaded training data from: data/preprocessed_train_5.npy
+loaded training data from: data/preprocessed_train_6.npy
+loaded training data from: data/preprocessed_train_7.npy
+loaded training data from: data/preprocessed_train_8.npy
+loaded training data from: data/preprocessed_train_9.npy
+dataset len: 29440
+train_set len: 23552
+val_set len: 5888
+cuda
+epochs:  100 batch 64
+Epoch 1, Learning rate: 0.0010000000

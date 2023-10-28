@@ -1,0 +1,322 @@
+dataset len: 2944
+train_set len: 2356
+val_set len: 588
+cuda
+classes:  50 batch 64
+Epoch 1, Learning rate: 0.0010000000
+Epoch 1, Training Loss: 3.9118, Training Accuracy: 2.46%
+Epoch 1, Validation Loss: 3.9195, Validation Accuracy: 2.21%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-000.pth
+Epoch 2, Learning rate: 0.0010000000
+Epoch 2, Training Loss: 3.9092, Training Accuracy: 6.07%
+Epoch 2, Validation Loss: 3.9255, Validation Accuracy: 2.21%
+Epoch 3, Learning rate: 0.0010000000
+Epoch 3, Training Loss: 3.8900, Training Accuracy: 12.99%
+Epoch 3, Validation Loss: 3.8911, Validation Accuracy: 5.27%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-002.pth
+Epoch 4, Learning rate: 0.0010000000
+Epoch 4, Training Loss: 3.8383, Training Accuracy: 30.98%
+Epoch 4, Validation Loss: 3.8547, Validation Accuracy: 10.20%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-003.pth
+Epoch 5, Learning rate: 0.0010000000
+Epoch 5, Training Loss: 3.7591, Training Accuracy: 44.19%
+Epoch 5, Validation Loss: 3.8719, Validation Accuracy: 9.01%
+Epoch 6, Learning rate: 0.0010000000
+Epoch 6, Training Loss: 3.6553, Training Accuracy: 55.43%
+Epoch 6, Validation Loss: 3.8726, Validation Accuracy: 4.93%
+Epoch 7, Learning rate: 0.0010000000
+Epoch 7, Training Loss: 3.5512, Training Accuracy: 64.52%
+Epoch 7, Validation Loss: 3.8670, Validation Accuracy: 9.35%
+Epoch 8, Learning rate: 0.0010000000
+Epoch 8, Training Loss: 3.4547, Training Accuracy: 71.31%
+Epoch 8, Validation Loss: 3.8490, Validation Accuracy: 16.84%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-007.pth
+Epoch 9, Learning rate: 0.0010000000
+Epoch 9, Training Loss: 3.3685, Training Accuracy: 76.23%
+Epoch 9, Validation Loss: 3.8496, Validation Accuracy: 18.20%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-008.pth
+Epoch 10, Learning rate: 0.0010000000
+Epoch 10, Training Loss: 3.2984, Training Accuracy: 80.73%
+Epoch 10, Validation Loss: 3.8437, Validation Accuracy: 21.26%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-009.pth
+Epoch 11, Learning rate: 0.0010000000
+Epoch 11, Training Loss: 3.2423, Training Accuracy: 83.06%
+Epoch 11, Validation Loss: 3.8267, Validation Accuracy: 29.25%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-010.pth
+Epoch 12, Learning rate: 0.0010000000
+Epoch 12, Training Loss: 3.1992, Training Accuracy: 86.21%
+Epoch 12, Validation Loss: 3.8244, Validation Accuracy: 27.55%
+Epoch 13, Learning rate: 0.0010000000
+Epoch 13, Training Loss: 3.1687, Training Accuracy: 87.65%
+Epoch 13, Validation Loss: 3.8276, Validation Accuracy: 29.93%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-012.pth
+Epoch 14, Learning rate: 0.0010000000
+Epoch 14, Training Loss: 3.1412, Training Accuracy: 89.26%
+Epoch 14, Validation Loss: 3.8244, Validation Accuracy: 28.57%
+Epoch 15, Learning rate: 0.0010000000
+Epoch 15, Training Loss: 3.1221, Training Accuracy: 90.58%
+Epoch 15, Validation Loss: 3.8051, Validation Accuracy: 32.82%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-014.pth
+Epoch 16, Learning rate: 0.0010000000
+Epoch 16, Training Loss: 3.1043, Training Accuracy: 91.30%
+Epoch 16, Validation Loss: 3.8062, Validation Accuracy: 34.86%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-015.pth
+Epoch 17, Learning rate: 0.0010000000
+Epoch 17, Training Loss: 3.0892, Training Accuracy: 91.94%
+Epoch 17, Validation Loss: 3.7908, Validation Accuracy: 34.35%
+Epoch 18, Learning rate: 0.0010000000
+Epoch 18, Training Loss: 3.0783, Training Accuracy: 92.23%
+Epoch 18, Validation Loss: 3.7985, Validation Accuracy: 35.71%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-017.pth
+Epoch 19, Learning rate: 0.0005000000
+Epoch 19, Training Loss: 3.0670, Training Accuracy: 92.66%
+Epoch 19, Validation Loss: 3.7940, Validation Accuracy: 36.22%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-018.pth
+Epoch 20, Learning rate: 0.0005000000
+Epoch 20, Training Loss: 3.0559, Training Accuracy: 93.08%
+Epoch 20, Validation Loss: 3.7947, Validation Accuracy: 36.39%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-019.pth
+Epoch 21, Learning rate: 0.0005000000
+Epoch 21, Training Loss: 3.0512, Training Accuracy: 93.29%
+Epoch 21, Validation Loss: 3.7971, Validation Accuracy: 36.22%
+Epoch 22, Learning rate: 0.0005000000
+Epoch 22, Training Loss: 3.0472, Training Accuracy: 93.59%
+Epoch 22, Validation Loss: 3.7950, Validation Accuracy: 36.90%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-021.pth
+Epoch 23, Learning rate: 0.0005000000
+Epoch 23, Training Loss: 3.0439, Training Accuracy: 93.76%
+Epoch 23, Validation Loss: 3.7972, Validation Accuracy: 35.88%
+Epoch 24, Learning rate: 0.0005000000
+Epoch 24, Training Loss: 3.0416, Training Accuracy: 93.85%
+Epoch 24, Validation Loss: 3.7979, Validation Accuracy: 36.39%
+Epoch 25, Learning rate: 0.0005000000
+Epoch 25, Training Loss: 3.0391, Training Accuracy: 94.10%
+Epoch 25, Validation Loss: 3.7977, Validation Accuracy: 35.88%
+Epoch 26, Learning rate: 0.0005000000
+Epoch 26, Training Loss: 3.0365, Training Accuracy: 94.19%
+Epoch 26, Validation Loss: 3.7995, Validation Accuracy: 35.37%
+Epoch 27, Learning rate: 0.0005000000
+Epoch 27, Training Loss: 3.0348, Training Accuracy: 94.27%
+Epoch 27, Validation Loss: 3.7961, Validation Accuracy: 36.22%
+Epoch 28, Learning rate: 0.0005000000
+Epoch 28, Training Loss: 3.0331, Training Accuracy: 94.40%
+Epoch 28, Validation Loss: 3.7980, Validation Accuracy: 35.71%
+Epoch 29, Learning rate: 0.0005000000
+Epoch 29, Training Loss: 3.0318, Training Accuracy: 94.44%
+Epoch 29, Validation Loss: 3.7947, Validation Accuracy: 35.88%
+Epoch 30, Learning rate: 0.0005000000
+Epoch 30, Training Loss: 3.0304, Training Accuracy: 94.61%
+Epoch 30, Validation Loss: 3.8004, Validation Accuracy: 36.05%
+Epoch 31, Learning rate: 0.0005000000
+Epoch 31, Training Loss: 3.0288, Training Accuracy: 94.65%
+Epoch 31, Validation Loss: 3.7910, Validation Accuracy: 35.88%
+Epoch 32, Learning rate: 0.0005000000
+Epoch 32, Training Loss: 3.0273, Training Accuracy: 94.74%
+Epoch 32, Validation Loss: 3.7975, Validation Accuracy: 35.37%
+Epoch 33, Learning rate: 0.0005000000
+Epoch 33, Training Loss: 3.0259, Training Accuracy: 94.78%
+Epoch 33, Validation Loss: 3.7910, Validation Accuracy: 36.90%
+Epoch 34, Learning rate: 0.0005000000
+Epoch 34, Training Loss: 3.0245, Training Accuracy: 94.78%
+Epoch 34, Validation Loss: 3.7941, Validation Accuracy: 36.39%
+Epoch 35, Learning rate: 0.0005000000
+Epoch 35, Training Loss: 3.0230, Training Accuracy: 94.86%
+Epoch 35, Validation Loss: 3.7910, Validation Accuracy: 35.71%
+Epoch 36, Learning rate: 0.0005000000
+Epoch 36, Training Loss: 3.0219, Training Accuracy: 94.95%
+Epoch 36, Validation Loss: 3.7922, Validation Accuracy: 35.88%
+Epoch 37, Learning rate: 0.0002500000
+Epoch 37, Training Loss: 3.0212, Training Accuracy: 94.99%
+Epoch 37, Validation Loss: 3.7897, Validation Accuracy: 36.05%
+Epoch 38, Learning rate: 0.0002500000
+Epoch 38, Training Loss: 3.0202, Training Accuracy: 94.99%
+Epoch 38, Validation Loss: 3.7917, Validation Accuracy: 36.22%
+Epoch 39, Learning rate: 0.0002500000
+Epoch 39, Training Loss: 3.0194, Training Accuracy: 95.12%
+Epoch 39, Validation Loss: 3.7932, Validation Accuracy: 35.71%
+Epoch 40, Learning rate: 0.0002500000
+Epoch 40, Training Loss: 3.0181, Training Accuracy: 95.20%
+Epoch 40, Validation Loss: 3.7909, Validation Accuracy: 36.22%
+Epoch 41, Learning rate: 0.0002500000
+Epoch 41, Training Loss: 3.0171, Training Accuracy: 95.25%
+Epoch 41, Validation Loss: 3.7924, Validation Accuracy: 36.05%
+Epoch 42, Learning rate: 0.0002500000
+Epoch 42, Training Loss: 3.0162, Training Accuracy: 95.29%
+Epoch 42, Validation Loss: 3.7941, Validation Accuracy: 36.90%
+Epoch 43, Learning rate: 0.0002500000
+Epoch 43, Training Loss: 3.0160, Training Accuracy: 95.25%
+Epoch 43, Validation Loss: 3.7925, Validation Accuracy: 36.39%
+Epoch 44, Learning rate: 0.0002500000
+Epoch 44, Training Loss: 3.0153, Training Accuracy: 95.29%
+Epoch 44, Validation Loss: 3.7911, Validation Accuracy: 36.56%
+Epoch 45, Learning rate: 0.0002500000
+Epoch 45, Training Loss: 3.0149, Training Accuracy: 95.29%
+Epoch 45, Validation Loss: 3.7925, Validation Accuracy: 36.56%
+Epoch 46, Learning rate: 0.0002500000
+Epoch 46, Training Loss: 3.0146, Training Accuracy: 95.29%
+Epoch 46, Validation Loss: 3.7924, Validation Accuracy: 36.73%
+Epoch 47, Learning rate: 0.0002500000
+Epoch 47, Training Loss: 3.0142, Training Accuracy: 95.29%
+Epoch 47, Validation Loss: 3.7928, Validation Accuracy: 36.39%
+Epoch 48, Learning rate: 0.0002500000
+Epoch 48, Training Loss: 3.0136, Training Accuracy: 95.37%
+Epoch 48, Validation Loss: 3.7966, Validation Accuracy: 36.05%
+Epoch 49, Learning rate: 0.0002500000
+Epoch 49, Training Loss: 3.0134, Training Accuracy: 95.37%
+Epoch 49, Validation Loss: 3.7915, Validation Accuracy: 36.56%
+Epoch 50, Learning rate: 0.0002500000
+Epoch 50, Training Loss: 3.0128, Training Accuracy: 95.42%
+Epoch 50, Validation Loss: 3.7942, Validation Accuracy: 36.22%
+Epoch 51, Learning rate: 0.0002500000
+Epoch 51, Training Loss: 3.0123, Training Accuracy: 95.46%
+Epoch 51, Validation Loss: 3.7945, Validation Accuracy: 36.05%
+Epoch 52, Learning rate: 0.0002500000
+Epoch 52, Training Loss: 3.0116, Training Accuracy: 95.46%
+Epoch 52, Validation Loss: 3.7932, Validation Accuracy: 36.05%
+Epoch 53, Learning rate: 0.0002500000
+Epoch 53, Training Loss: 3.0113, Training Accuracy: 95.50%
+Epoch 53, Validation Loss: 3.7940, Validation Accuracy: 36.05%
+Epoch 54, Learning rate: 0.0002500000
+Epoch 54, Training Loss: 3.0109, Training Accuracy: 95.50%
+Epoch 54, Validation Loss: 3.7950, Validation Accuracy: 35.71%
+Epoch 55, Learning rate: 0.0001250000
+Epoch 55, Training Loss: 3.0102, Training Accuracy: 95.54%
+Epoch 55, Validation Loss: 3.7936, Validation Accuracy: 36.22%
+Epoch 56, Learning rate: 0.0001250000
+Epoch 56, Training Loss: 3.0098, Training Accuracy: 95.59%
+Epoch 56, Validation Loss: 3.7954, Validation Accuracy: 35.88%
+Epoch 57, Learning rate: 0.0001250000
+Epoch 57, Training Loss: 3.0093, Training Accuracy: 95.59%
+Epoch 57, Validation Loss: 3.7943, Validation Accuracy: 36.05%
+Epoch 58, Learning rate: 0.0001250000
+Epoch 58, Training Loss: 3.0092, Training Accuracy: 95.59%
+Epoch 58, Validation Loss: 3.7942, Validation Accuracy: 36.05%
+Epoch 59, Learning rate: 0.0001250000
+Epoch 59, Training Loss: 3.0090, Training Accuracy: 95.59%
+Epoch 59, Validation Loss: 3.7940, Validation Accuracy: 36.05%
+Epoch 60, Learning rate: 0.0001250000
+Epoch 60, Training Loss: 3.0089, Training Accuracy: 95.59%
+Epoch 60, Validation Loss: 3.7939, Validation Accuracy: 36.05%
+Epoch 61, Learning rate: 0.0001250000
+Epoch 61, Training Loss: 3.0087, Training Accuracy: 95.59%
+Epoch 61, Validation Loss: 3.7939, Validation Accuracy: 36.22%
+Epoch 62, Learning rate: 0.0001250000
+Epoch 62, Training Loss: 3.0086, Training Accuracy: 95.59%
+Epoch 62, Validation Loss: 3.7939, Validation Accuracy: 36.05%
+Epoch 63, Learning rate: 0.0001250000
+Epoch 63, Training Loss: 3.0084, Training Accuracy: 95.59%
+Epoch 63, Validation Loss: 3.7939, Validation Accuracy: 35.88%
+Epoch 64, Learning rate: 0.0001250000
+Epoch 64, Training Loss: 3.0083, Training Accuracy: 95.63%
+Epoch 64, Validation Loss: 3.7939, Validation Accuracy: 36.22%
+Epoch 65, Learning rate: 0.0001250000
+Epoch 65, Training Loss: 3.0081, Training Accuracy: 95.63%
+Epoch 65, Validation Loss: 3.7944, Validation Accuracy: 35.88%
+Epoch 66, Learning rate: 0.0001250000
+Epoch 66, Training Loss: 3.0077, Training Accuracy: 95.63%
+Epoch 66, Validation Loss: 3.7946, Validation Accuracy: 35.88%
+Epoch 67, Learning rate: 0.0001250000
+Epoch 67, Training Loss: 3.0075, Training Accuracy: 95.63%
+Epoch 67, Validation Loss: 3.7942, Validation Accuracy: 35.54%
+Epoch 68, Learning rate: 0.0001250000
+Epoch 68, Training Loss: 3.0074, Training Accuracy: 95.63%
+Epoch 68, Validation Loss: 3.7941, Validation Accuracy: 35.54%
+Epoch 69, Learning rate: 0.0001250000
+Epoch 69, Training Loss: 3.0073, Training Accuracy: 95.63%
+Epoch 69, Validation Loss: 3.7939, Validation Accuracy: 35.54%
+Epoch 70, Learning rate: 0.0001250000
+Epoch 70, Training Loss: 3.0071, Training Accuracy: 95.63%
+Epoch 70, Validation Loss: 3.7943, Validation Accuracy: 35.71%
+Epoch 71, Learning rate: 0.0001250000
+Epoch 71, Training Loss: 3.0069, Training Accuracy: 95.67%
+Epoch 71, Validation Loss: 3.7950, Validation Accuracy: 35.37%
+Epoch 72, Learning rate: 0.0001250000
+Epoch 72, Training Loss: 3.0065, Training Accuracy: 95.71%
+Epoch 72, Validation Loss: 3.7969, Validation Accuracy: 35.20%
+Epoch 73, Learning rate: 0.0000625000
+Epoch 73, Training Loss: 3.0062, Training Accuracy: 95.71%
+Epoch 73, Validation Loss: 3.7949, Validation Accuracy: 35.54%
+Epoch 74, Learning rate: 0.0000625000
+Epoch 74, Training Loss: 3.0060, Training Accuracy: 95.71%
+Epoch 74, Validation Loss: 3.7950, Validation Accuracy: 35.54%
+Epoch 75, Learning rate: 0.0000625000
+Epoch 75, Training Loss: 3.0059, Training Accuracy: 95.71%
+Epoch 75, Validation Loss: 3.7949, Validation Accuracy: 35.88%
+Epoch 76, Learning rate: 0.0000625000
+Epoch 76, Training Loss: 3.0058, Training Accuracy: 95.76%
+Epoch 76, Validation Loss: 3.7951, Validation Accuracy: 35.71%
+Epoch 77, Learning rate: 0.0000625000
+Epoch 77, Training Loss: 3.0055, Training Accuracy: 95.76%
+Epoch 77, Validation Loss: 3.7951, Validation Accuracy: 35.71%
+Epoch 78, Learning rate: 0.0000625000
+Epoch 78, Training Loss: 3.0054, Training Accuracy: 95.76%
+Epoch 78, Validation Loss: 3.7949, Validation Accuracy: 35.88%
+Epoch 79, Learning rate: 0.0000625000
+Epoch 79, Training Loss: 3.0053, Training Accuracy: 95.76%
+Epoch 79, Validation Loss: 3.7948, Validation Accuracy: 36.05%
+Epoch 80, Learning rate: 0.0000625000
+Epoch 80, Training Loss: 3.0052, Training Accuracy: 95.76%
+Epoch 80, Validation Loss: 3.7948, Validation Accuracy: 36.05%
+Epoch 81, Learning rate: 0.0000625000
+Epoch 81, Training Loss: 3.0052, Training Accuracy: 95.76%
+Epoch 81, Validation Loss: 3.7949, Validation Accuracy: 36.05%
+Epoch 82, Learning rate: 0.0000625000
+Epoch 82, Training Loss: 3.0051, Training Accuracy: 95.76%
+Epoch 82, Validation Loss: 3.7948, Validation Accuracy: 36.05%
+Epoch 83, Learning rate: 0.0000625000
+Epoch 83, Training Loss: 3.0050, Training Accuracy: 95.76%
+Epoch 83, Validation Loss: 3.7947, Validation Accuracy: 36.05%
+Epoch 84, Learning rate: 0.0000625000
+Epoch 84, Training Loss: 3.0049, Training Accuracy: 95.76%
+Epoch 84, Validation Loss: 3.7948, Validation Accuracy: 36.05%
+Epoch 85, Learning rate: 0.0000625000
+Epoch 85, Training Loss: 3.0049, Training Accuracy: 95.76%
+Epoch 85, Validation Loss: 3.7949, Validation Accuracy: 35.71%
+Epoch 86, Learning rate: 0.0000625000
+Epoch 86, Training Loss: 3.0048, Training Accuracy: 95.76%
+Epoch 86, Validation Loss: 3.7949, Validation Accuracy: 35.71%
+Epoch 87, Learning rate: 0.0000625000
+Epoch 87, Training Loss: 3.0047, Training Accuracy: 95.76%
+Epoch 87, Validation Loss: 3.7953, Validation Accuracy: 36.05%
+Epoch 88, Learning rate: 0.0000625000
+Epoch 88, Training Loss: 3.0044, Training Accuracy: 95.88%
+Epoch 88, Validation Loss: 3.7968, Validation Accuracy: 35.88%
+Epoch 89, Learning rate: 0.0000625000
+Epoch 89, Training Loss: 3.0043, Training Accuracy: 95.84%
+Epoch 89, Validation Loss: 3.7964, Validation Accuracy: 35.88%
+Epoch 90, Learning rate: 0.0000625000
+Epoch 90, Training Loss: 3.0038, Training Accuracy: 95.88%
+Epoch 90, Validation Loss: 3.7962, Validation Accuracy: 36.22%
+Epoch 91, Learning rate: 0.0000312500
+Epoch 91, Training Loss: 3.0035, Training Accuracy: 95.93%
+Epoch 91, Validation Loss: 3.7959, Validation Accuracy: 36.05%
+Epoch 92, Learning rate: 0.0000312500
+Epoch 92, Training Loss: 3.0033, Training Accuracy: 95.93%
+Epoch 92, Validation Loss: 3.7959, Validation Accuracy: 36.22%
+Epoch 93, Learning rate: 0.0000312500
+Epoch 93, Training Loss: 3.0033, Training Accuracy: 95.93%
+Epoch 93, Validation Loss: 3.7957, Validation Accuracy: 36.22%
+Epoch 94, Learning rate: 0.0000312500
+Epoch 94, Training Loss: 3.0032, Training Accuracy: 95.93%
+Epoch 94, Validation Loss: 3.7957, Validation Accuracy: 36.22%
+Epoch 95, Learning rate: 0.0000312500
+Epoch 95, Training Loss: 3.0032, Training Accuracy: 95.93%
+Epoch 95, Validation Loss: 3.7957, Validation Accuracy: 36.22%
+Epoch 96, Learning rate: 0.0000312500
+Epoch 96, Training Loss: 3.0031, Training Accuracy: 95.93%
+Epoch 96, Validation Loss: 3.7957, Validation Accuracy: 36.22%
+Epoch 97, Learning rate: 0.0000312500
+Epoch 97, Training Loss: 3.0031, Training Accuracy: 95.93%
+Epoch 97, Validation Loss: 3.7957, Validation Accuracy: 36.05%
+Epoch 98, Learning rate: 0.0000312500
+Epoch 98, Training Loss: 3.0030, Training Accuracy: 95.93%
+Epoch 98, Validation Loss: 3.7959, Validation Accuracy: 35.71%
+Epoch 99, Learning rate: 0.0000312500
+Epoch 99, Training Loss: 3.0029, Training Accuracy: 95.97%
+Epoch 99, Validation Loss: 3.7961, Validation Accuracy: 35.71%
+Epoch 100, Learning rate: 0.0000312500
+Epoch 100, Training Loss: 3.0028, Training Accuracy: 95.97%
+Epoch 100, Validation Loss: 3.7964, Validation Accuracy: 35.88%
+Best epoch 22, Highest Validation Accuracy: 36.90%
+loaded checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-021.pth
+results saved to: data/result.zip
