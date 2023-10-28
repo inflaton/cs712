@@ -1,6 +1,6 @@
 import os
 import cv2
-import random
+from pathlib import Path
 from PIL import Image
 import numpy as np
 import torch
@@ -10,15 +10,15 @@ import torchvision.models as models
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
-RANDOM_SEED = 193
+# RANDOM_SEED = 193
 
-# initialising seed for reproducibility
-torch.manual_seed(RANDOM_SEED)
-torch.cuda.manual_seed(RANDOM_SEED)
-seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
-np.random.seed(RANDOM_SEED)
-random.seed(RANDOM_SEED)
-torch.backends.cudnn.deterministic = True
+# # initialising seed for reproducibility
+# torch.manual_seed(RANDOM_SEED)
+# torch.cuda.manual_seed(RANDOM_SEED)
+# seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
+# np.random.seed(RANDOM_SEED)
+# random.seed(RANDOM_SEED)
+# torch.backends.cudnn.deterministic = True
 
 # Check if GPU is available
 if torch.cuda.is_available():
@@ -104,10 +104,18 @@ for folder in folders:
     fold = 1
     preporcess = None
     if folder == "train":
-        fold = 10
+        fold = 20
         preporcess = preprocess_image
 
     for i in range(fold):
+        filename = f"data/preprocessed_{folder}.npy"
+        if fold > 0:
+            filename = f"data/preprocessed_{folder}_{i}.npy"
+            path = Path(filename)
+            if path.is_file():
+                print(f"File {filename} exists - skipping ...")
+                continue
+
         # # Initialize an empty NumPy array to store the data
         data = np.empty(
             (total_data_points, images_per_data_point, 2048), dtype=np.float32
@@ -130,8 +138,5 @@ for folder in folders:
                     # Store the image vector in the data array
                     data[data_point_index, image_index] = image_vector
 
-        filename = f"data/preprocessed_{folder}.npy"
-        if fold > 0:
-            filename = f"data/preprocessed_{folder}_{i}.npy"
         np.save(filename, data)
         print(f"saved file: {filename}", flush=True)

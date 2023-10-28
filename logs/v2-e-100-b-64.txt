@@ -63,3 +63,18 @@ Epoch 13, Learning rate: 0.0010000000
 Epoch 13, Training Loss: 2.9517, Training Accuracy: 99.83%
 Epoch 13, Validation Loss: 2.9495, Validation Accuracy: 99.66%
 Epoch 14, Learning rate: 0.0010000000
+Epoch 14, Training Loss: 2.9521, Training Accuracy: 99.81%
+Epoch 14, Validation Loss: 2.9496, Validation Accuracy: 99.66%
+Epoch 15, Learning rate: 0.0010000000
+Epoch 15, Training Loss: 2.9590, Training Accuracy: 99.57%
+Epoch 15, Validation Loss: 2.9922, Validation Accuracy: 97.72%
+Epoch 16, Learning rate: 0.0010000000
+Epoch 16, Training Loss: 2.9719, Training Accuracy: 99.17%
+Epoch 16, Validation Loss: 2.9505, Validation Accuracy: 99.66%
+Epoch 17, Learning rate: 0.0010000000
+Epoch 17, Training Loss: 2.9522, Training Accuracy: 99.83%
+Epoch 17, Validation Loss: 2.9494, Validation Accuracy: 99.66%
+Epoch 18, Learning rate: 0.0010000000
+Epoch 18, Training Loss: 2.9494, Training Accuracy: 99.83%
+Epoch 18, Validation Loss: 2.9492, Validation Accuracy: 99.66%
+Epoch 19, Learning rate: 0.0010000000

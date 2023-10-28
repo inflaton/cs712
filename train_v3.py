@@ -304,7 +304,7 @@ if __name__ == "__main__":
             val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
 
             # Define the optimizer and loss function
-            optimizer = optim.Adam(model.parameters(), lr=0.001)
+            optimizer = optim.AdamW(model.parameters(), lr=0.001, weight_decay=1e-3)
             scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=18, gamma=0.5)
             criterion = nn.CrossEntropyLoss()
 
