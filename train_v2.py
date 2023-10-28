@@ -244,17 +244,6 @@ if torch.cuda.is_available():
 else:
     device = torch.device("cpu")  # Use CPU
 
-data, labels = load_training_data()
-
-# Define the dataset and dataloader
-dataset = JigsawDataset(data, labels)
-print(f"dataset len: {len(dataset)}")
-
-train_set, val_set = random_split(dataset, [0.8, 0.2])
-print(f"train_set len: {len(train_set)}")
-print(f"val_set len: {len(val_set)}")
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
@@ -270,22 +259,33 @@ if __name__ == "__main__":
 
     print("epochs: ", num_epochs, "batch", batch_size)
 
-    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=False)
-    val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
-
     # Create the model
     # model = JigsawModel(n_classes=num_classes).to(device)
     model = JigsawNet(n_classes=num_classes).to(device)
 
-    # Define the optimizer and loss function
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=18, gamma=0.5)
-    criterion = nn.CrossEntropyLoss()
+    if num_epochs > 0:
+        data, labels = load_training_data()
 
-    # Train the model
-    train_model(
-        model, train_loader, val_loader, optimizer, scheduler, criterion, num_epochs
-    )
+        # Define the dataset and dataloader
+        dataset = JigsawDataset(data, labels)
+        print(f"dataset len: {len(dataset)}")
+
+        train_set, val_set = random_split(dataset, [0.8, 0.2])
+        print(f"train_set len: {len(train_set)}")
+        print(f"val_set len: {len(val_set)}")
+
+        train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=False)
+        val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
+
+        # Define the optimizer and loss function
+        optimizer = optim.Adam(model.parameters(), lr=0.001)
+        scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=18, gamma=0.5)
+        criterion = nn.CrossEntropyLoss()
+
+        # Train the model
+        train_model(
+            model, train_loader, val_loader, optimizer, scheduler, criterion, num_epochs
+        )
 
     validation_data = np.load(f"data/preprocessed_validation.npy")
     validation_data = torch.from_numpy(validation_data).float()
