@@ -75,16 +75,16 @@ def evaluate_model(model, data_loader, checkpoint=-1):
     all_predictions = all_predictions.astype(int)
 
     # Save the predicted values to a text file
-    filename = "data/validation.txt"
+    filename = "data/test.txt"
     np.savetxt(filename, all_predictions, fmt="%d")
 
     # compress the results folder
-    zip_filename = "data/result.zip"
+    zip_filename = "data/test-result.zip"
     path = Path(zip_filename)
     if path.is_file():
         os.remove(zip_filename)
     with zipfile.ZipFile(zip_filename, "w") as zipf:
-        zipf.write(filename, arcname="validation.txt")
+        zipf.write(filename, arcname="test.txt")
 
     print(f"results saved to: {zip_filename}")
 
@@ -133,17 +133,15 @@ if __name__ == "__main__":
     # model = JigsawModel(n_classes=num_classes).to(device)
     model = JigsawNet(n_classes=num_classes).to(device)
 
-    validation_data = np.load(f"data/preprocessed_validation.npy")
-    validation_data = torch.from_numpy(validation_data).float()
+    test_data = np.load(f"data/preprocessed_test.npy")
+    test_data = torch.from_numpy(test_data).float()
 
-    validation_dataset = JigsawValidationDataset(validation_data)
-    validation_loader = DataLoader(
-        validation_dataset, batch_size=batch_size, shuffle=False
-    )
+    test_dataset = JigsawValidationDataset(test_data)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
     reset_random_generators()
     # Evaluate the model and save the results to a text file
-    evaluate_model(model, validation_loader, checkpoint=checkpoint)
+    evaluate_model(model, test_loader, checkpoint=checkpoint)
 
 # v4 submissions (20x data augmentation)
 # checkpoint-002    32	0.422589

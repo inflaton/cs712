@@ -32,7 +32,7 @@ input_size = 224
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
 
-preprocess_image = A.Compose(
+preprocess_training_image = A.Compose(
     [
         A.SmallestMaxSize(max_size=input_size + 48),
         A.ShiftScaleRotate(shift_limit=0.05, scale_limit=0.05, rotate_limit=15, p=0.5),
@@ -44,8 +44,7 @@ preprocess_image = A.Compose(
     ]
 )
 
-# folders = ["train", "validation"]
-folders = ["train"]
+folders = ["train", "validation", "test"]
 
 for folder in folders:
     # Define the directory where your images are located
@@ -101,20 +100,26 @@ for folder in folders:
     total_data_points = int(len(os.listdir(data_dir)) / images_per_data_point)
     print("total_data_points: ", total_data_points)
 
-    fold = 1
-    preporcess = None
     if folder == "train":
-        fold = 20
-        preporcess = preprocess_image
+        fold = 10
+        preporcess = preprocess_training_image
+    else:
+        fold = 1
+        preporcess = None
 
     for i in range(fold):
-        filename = f"data/preprocessed_{folder}.npy"
-        if fold > 0:
-            filename = f"data/preprocessed_{folder}_{i}.npy"
-            path = Path(filename)
-            if path.is_file():
-                print(f"File {filename} exists - skipping ...")
-                continue
+        filename = (
+            f"data/preprocessed_{folder}_{i}.npy"
+            if fold > 1
+            else f"data/preprocessed_{folder}.npy"
+        )
+
+        path = Path(filename)
+        if path.is_file():
+            print(f"File {filename} exists - skipping ...", flush=True)
+            continue
+
+        print(f"File {filename} does not exist - creating a new one ...", flush=True)
 
         # # Initialize an empty NumPy array to store the data
         data = np.empty(

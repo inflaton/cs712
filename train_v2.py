@@ -38,7 +38,7 @@ def checkpoint_save(model, save_path, epoch):
 def checkpoint_delete(save_path, epoch):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
-    os.remove(f)
+    # os.remove(f)
 
 
 # save checkpoint function
@@ -49,16 +49,15 @@ def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
     print("loaded checkpoint:", f, flush=True)
 
 
-def load_training_data():
+def load_training_data(for_validation=False, max_fold=10):
     # Load the labels
     labels = np.loadtxt(f"data/train/label_train.txt")
     labels = torch.from_numpy(labels).long()
 
     filename = "data/preprocessed_train.npy"
-    path = Path(filename)
 
     data = None
-    if path.is_file():
+    if for_validation:
         preprocessed_data = np.load(filename)
         # Convert the NumPy array to PyTorch tensors
         data = torch.from_numpy(preprocessed_data).float()
@@ -83,6 +82,8 @@ def load_training_data():
 
                 print(f"loaded training data from: {filename}")
                 fold += 1
+                if fold == max_fold:
+                    break
             else:
                 break
 

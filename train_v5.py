@@ -135,7 +135,7 @@ def train_model(
             total_predictions += label.size(0)
             correct_predictions += (predicted == label).sum().item()
 
-        # scheduler.step()
+        scheduler.step()
 
         avg_loss = total_loss / len(train_loader)
         accuracy = correct_predictions / total_predictions
@@ -203,7 +203,7 @@ else:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=20)
+    parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=10)
     parser.add_argument("-b", "--batch", type=int, help="Batch size", default=64)
     parser.add_argument(
         "-r",
@@ -252,7 +252,7 @@ if __name__ == "__main__":
     # Define the optimizer and loss function
     optimizer = optim.Adam(model.parameters(), lr=learing_rate)
 
-    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.1)
     criterion = nn.CrossEntropyLoss()
 
     # Train the model
