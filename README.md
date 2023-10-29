@@ -9,8 +9,8 @@ This project contains all source files, as well as results/logs, for our submiss
 ```
 $ tree -L 1 data
 data
-├── train
 ├── test
+├── train
 └── validation
 ```
 
