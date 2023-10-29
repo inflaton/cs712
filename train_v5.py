@@ -43,6 +43,46 @@ def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
     print("loaded checkpoint:", f, flush=True)
 
 
+def load_training_data(max_fold=10):
+    # Load the labels
+    labels = np.loadtxt(f"data/train/label_train.txt")
+    labels = torch.from_numpy(labels).long()
+
+    data = None
+    if max_fold == 0:
+        filename = "data/preprocessed_train.npy"
+        preprocessed_data = np.load(filename)
+        # Convert the NumPy array to PyTorch tensors
+        data = torch.from_numpy(preprocessed_data).float()
+        print(f"loaded training data from: {filename}")
+    else:
+        fold = 0
+        labels_one_fold = labels
+        while True:
+            filename = f"data/preprocessed_train_{fold}.npy"
+            path = Path(filename)
+
+            if path.is_file():
+                preprocessed_data = np.load(filename)
+                # Convert the NumPy array to PyTorch tensors
+                temp = torch.from_numpy(preprocessed_data).float()
+
+                if fold > 0:
+                    data = ConcatDataset([data, temp])
+                    labels = ConcatDataset([labels, labels_one_fold])
+                else:
+                    data = temp
+
+                print(f"loaded training data from: {filename}")
+                fold += 1
+                if fold >= max_fold:
+                    break
+            else:
+                break
+
+    return data, labels
+
+
 def train_model(
     model,
     train_loader,
@@ -196,6 +236,8 @@ if __name__ == "__main__":
     # model = JigsawModel(n_classes=num_classes).to(device)
     model = JigsawNet(n_classes=num_classes).to(device)
 
+    data, labels = load_training_data()
+
     # Define the dataset and dataloader
     dataset = JigsawDataset(data, labels)
     print(f"dataset len: {len(dataset)}")
@@ -209,9 +251,6 @@ if __name__ == "__main__":
 
     # Define the optimizer and loss function
     optimizer = optim.Adam(model.parameters(), lr=learing_rate)
-    # optimizer = optim.AdamW(
-    # model.parameters(), lr=0.001, weight_decay=0.0001, betas=(0.85, 0.999)
-    # )
 
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
     criterion = nn.CrossEntropyLoss()
