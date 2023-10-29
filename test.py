@@ -133,11 +133,14 @@ if __name__ == "__main__":
     # model = JigsawModel(n_classes=num_classes).to(device)
     model = JigsawNet(n_classes=num_classes).to(device)
 
-    test_data = np.load(f"data/preprocessed_test.npy")
+    filename = "data/preprocessed_test.npy"
+    test_data = np.load(filename)
     test_data = torch.from_numpy(test_data).float()
 
     test_dataset = JigsawValidationDataset(test_data)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+    print(f"loaded test data from: {filename}")
 
     reset_random_generators()
     # Evaluate the model and save the results to a text file

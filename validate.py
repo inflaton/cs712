@@ -133,7 +133,8 @@ if __name__ == "__main__":
     # model = JigsawModel(n_classes=num_classes).to(device)
     model = JigsawNet(n_classes=num_classes).to(device)
 
-    validation_data = np.load(f"data/preprocessed_validation.npy")
+    filename = "data/preprocessed_validation.npy"
+    validation_data = np.load(filename)
     validation_data = torch.from_numpy(validation_data).float()
 
     validation_dataset = JigsawValidationDataset(validation_data)
@@ -141,14 +142,8 @@ if __name__ == "__main__":
         validation_dataset, batch_size=batch_size, shuffle=False
     )
 
+    print(f"loaded validation data from: {filename}")
+
     reset_random_generators()
     # Evaluate the model and save the results to a text file
     evaluate_model(model, validation_loader, checkpoint=checkpoint)
-
-# v4 submissions (20x data augmentation)
-# checkpoint-002    32	0.422589
-# checkpoint-003    29	0.427351
-# checkpoint-004    33	0.431287
-# checkpoint-005    34	0.428881
-# checkpoint-007    31	0.416034
-# checkpoint-008    30	0.414468
