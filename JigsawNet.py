@@ -4,10 +4,12 @@ import torch.nn.functional as F
 
 
 class JigsawNet(nn.Module):
-    def __init__(self, n_classes=50):
+    def __init__(self, n_classes=50, num_features=2048):
         super(JigsawNet, self).__init__()
 
-        self.fc1 = nn.Linear(2048, 512)
+        self.num_features = num_features
+
+        self.fc1 = nn.Linear(num_features, 512)
         self.fc2 = nn.Linear(18432, 16384)
         self.fc3 = nn.Linear(16384, 4096)
         self.fc4 = nn.Linear(4096, n_classes)
@@ -28,7 +30,7 @@ class JigsawNet(nn.Module):
         return p
 
     def forward(self, x):
-        if x.shape[1] == 2048:  # single
+        if x.shape[1] == self.num_features:  # single
             p = self.process_features(x)
             p = p.view(1, -1)
         else:  # batch
