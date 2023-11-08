@@ -36,61 +36,38 @@ def checkpoint_save(model, save_path, epoch):
 
 
 # save checkpoint function
-def checkpoint_load(model, save_path, epoch, n_classes=0, model_ver=1):
+def checkpoint_load(model, save_path, epoch, n_classes=0):
     filename = "checkpoint-{:03d}.pth".format(epoch)
     f = os.path.join(save_path, filename)
     model.load_state_dict(torch.load(f))
     print("loaded checkpoint:", f, flush=True)
 
 
-def load_training_data(max_fold=10):
+def load_training_data(epoch, max_fold=10):
     # Load the labels
     labels = np.loadtxt(f"data/train/label_train.txt")
     labels = torch.from_numpy(labels).long()
 
     data = None
-    if max_fold == 0:
-        filename = "data/timm_preprocessed_train.npy"
-        preprocessed_data = np.load(filename)
-        # Convert the NumPy array to PyTorch tensors
-        data = torch.from_numpy(preprocessed_data).float()
-        print(f"loaded training data from: {filename}")
-    else:
-        fold = 0
-        labels_one_fold = labels
-        while True:
-            filename = f"data/timm_preprocessed_train_{fold}.npy"
-            path = Path(filename)
-
-            if path.is_file():
-                preprocessed_data = np.load(filename)
-                # Convert the NumPy array to PyTorch tensors
-                temp = torch.from_numpy(preprocessed_data).float()
-
-                if fold > 0:
-                    data = ConcatDataset([data, temp])
-                    labels = ConcatDataset([labels, labels_one_fold])
-                else:
-                    data = temp
-
-                print(f"loaded training data from: {filename}")
-                fold += 1
-                if fold >= max_fold:
-                    break
-            else:
-                break
-
+    filename = (
+        "data/timm_preprocessed_train.npy"
+        if max_fold == 0
+        else f"data/timm_preprocessed_train_{epoch%max_fold}.npy"
+    )
+    preprocessed_data = np.load(filename)
+    # Convert the NumPy array to PyTorch tensors
+    data = torch.from_numpy(preprocessed_data).float()
+    print(f"loaded training data from: {filename}")
     return data, labels
 
 
 def train_model(
     model,
-    train_loader,
-    val_loader,
     optimizer,
     scheduler,
     criterion,
     num_epochs,
+    max_fold,
     load_checkpoint=False,
 ):
     save_path = os.path.join(os.getcwd(), "data", "checkpoints/")
@@ -111,6 +88,7 @@ def train_model(
 
     for epoch in range(num_epochs):
         if epoch <= loaded_checkpoint:
+            scheduler.step()
             continue
 
         model.train()
@@ -120,6 +98,15 @@ def train_model(
 
         learning_rate = optimizer.state_dict()["param_groups"][0]["lr"]
         print(f"Epoch {epoch + 1}, Learning rate: {learning_rate:.10f}", flush=True)
+
+        data, labels = load_training_data(epoch, max_fold=max_fold)
+
+        # Define the dataset and dataloader
+        dataset = JigsawDataset(data, labels)
+        train_set, val_set = random_split(dataset, [0.9, 0.1])
+
+        train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
+        val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
 
         for puzzle, label in train_loader:
             puzzle, label = puzzle.to(device), label.to(device)
@@ -183,25 +170,25 @@ def train_model(
     )
 
 
-RANDOM_SEED = 193
-# RANDOM_SEED = 194
-# RANDOM_SEED = 1940
-
-# initialising seed for reproducibility
-torch.manual_seed(RANDOM_SEED)
-torch.cuda.manual_seed(RANDOM_SEED)
-seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
-np.random.seed(RANDOM_SEED)
-random.seed(RANDOM_SEED)
-torch.backends.cudnn.deterministic = True
-
-# Check if GPU is available
-if torch.cuda.is_available():
-    device = torch.device("cuda")  # Use GPU
-else:
-    device = torch.device("cpu")  # Use CPU
-
 if __name__ == "__main__":
+    RANDOM_SEED = 193
+    # RANDOM_SEED = 194
+    # RANDOM_SEED = 1940
+
+    # initialising seed for reproducibility
+    torch.manual_seed(RANDOM_SEED)
+    torch.cuda.manual_seed(RANDOM_SEED)
+    seeded_generator = torch.Generator().manual_seed(RANDOM_SEED)
+    np.random.seed(RANDOM_SEED)
+    random.seed(RANDOM_SEED)
+    torch.backends.cudnn.deterministic = True
+
+    # Check if GPU is available
+    if torch.cuda.is_available():
+        device = torch.device("cuda")  # Use GPU
+    else:
+        device = torch.device("cpu")  # Use CPU
+
     parser = argparse.ArgumentParser()
     parser.add_argument("-e", "--epochs", type=int, help="Number of epochs", default=10)
     parser.add_argument("-b", "--batch", type=int, help="Batch size", default=64)
@@ -246,34 +233,6 @@ if __name__ == "__main__":
         n_classes=num_classes, num_features=3072, relu_in_last_fc=True
     ).to(device)
 
-    data, labels = load_training_data(max_fold=max_fold)
-
-    # Define the dataset and dataloader
-    dataset = JigsawDataset(data, labels)
-    print(f"dataset len: {len(dataset)}")
-
-    data_points = int(len(dataset) / max_fold)
-    print(f"data_points: {data_points}")
-    # train_ids, val_ids = random_split(range(data_points), [0.8, 0.2])
-    train_ids, val_ids = random_split(range(data_points), [0.9, 0.1])
-
-    train_set, val_set = None, None
-    for i in range(max_fold):
-        if i == 0:
-            train_set = Subset(dataset, train_ids)
-            val_set = Subset(dataset, val_ids)
-        else:
-            train_ids = [id + data_points for id in train_ids]
-            val_ids = [id + data_points for id in val_ids]
-            train_set = ConcatDataset([train_set, Subset(dataset, train_ids)])
-            val_set = ConcatDataset([val_set, Subset(dataset, val_ids)])
-
-    print(f"train_set len: {len(train_set)}")
-    print(f"val_set len: {len(val_set)}")
-
-    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_set, batch_size=batch_size, shuffle=False)
-
     # Define the optimizer and loss function
     optimizer = optim.Adam(model.parameters(), lr=learing_rate)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=13, gamma=0.1)
@@ -282,11 +241,10 @@ if __name__ == "__main__":
     # Train the model
     train_model(
         model,
-        train_loader,
-        val_loader,
         optimizer,
         scheduler,
         criterion,
         num_epochs,
+        max_fold,
         load_checkpoint,
     )

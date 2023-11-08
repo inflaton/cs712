@@ -1,0 +1,17 @@
+device: cuda
+epochs:  50 batch: 64 max_fold: 6
+loaded training data from: data/timm_preprocessed_train_0.npy
+loaded training data from: data/timm_preprocessed_train_1.npy
+loaded training data from: data/timm_preprocessed_train_2.npy
+loaded training data from: data/timm_preprocessed_train_3.npy
+loaded training data from: data/timm_preprocessed_train_4.npy
+loaded training data from: data/timm_preprocessed_train_5.npy
+dataset len: 17664
+data_points: 2944
+train_set len: 15900
+val_set len: 1764
+Epoch 1, Learning rate: 0.0010000000
+Epoch 1, Training Loss: 3.9070, Training Accuracy: 5.50%
+Epoch 1, Validation Loss: 3.8987, Validation Accuracy: 4.65%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-000.pth
+Epoch 2, Learning rate: 0.0010000000

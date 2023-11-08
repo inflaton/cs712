@@ -1,0 +1,118 @@
+device: cuda
+epochs:  50 batch: 64 max_fold: 2
+loaded training data from: data/timm_preprocessed_train_0.npy
+loaded training data from: data/timm_preprocessed_train_1.npy
+dataset len: 5888
+data_points: 2944
+train_set len: 5300
+val_set len: 588
+loaded checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-019.pth
+Epoch 21, Learning rate: 0.0010000000
+Epoch 21, Training Loss: 3.0351, Training Accuracy: 93.40%
+Epoch 21, Validation Loss: 3.7635, Validation Accuracy: 30.78%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-020.pth
+Epoch 22, Learning rate: 0.0010000000
+Epoch 22, Training Loss: 3.0340, Training Accuracy: 94.34%
+Epoch 22, Validation Loss: 3.7318, Validation Accuracy: 30.10%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-021.pth
+Epoch 23, Learning rate: 0.0010000000
+Epoch 23, Training Loss: 3.0240, Training Accuracy: 94.58%
+Epoch 23, Validation Loss: 3.7280, Validation Accuracy: 31.29%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-022.pth
+Epoch 24, Learning rate: 0.0010000000
+Epoch 24, Training Loss: 3.0129, Training Accuracy: 95.09%
+Epoch 24, Validation Loss: 3.7367, Validation Accuracy: 29.25%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-023.pth
+Epoch 25, Learning rate: 0.0010000000
+Epoch 25, Training Loss: 3.0050, Training Accuracy: 95.53%
+Epoch 25, Validation Loss: 3.7340, Validation Accuracy: 30.44%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-024.pth
+Epoch 26, Learning rate: 0.0010000000
+Epoch 26, Training Loss: 2.9984, Training Accuracy: 95.98%
+Epoch 26, Validation Loss: 3.7402, Validation Accuracy: 29.59%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-025.pth
+Epoch 27, Learning rate: 0.0010000000
+Epoch 27, Training Loss: 2.9953, Training Accuracy: 96.28%
+Epoch 27, Validation Loss: 3.7385, Validation Accuracy: 32.14%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-026.pth
+Epoch 28, Learning rate: 0.0010000000
+Epoch 28, Training Loss: 2.9910, Training Accuracy: 96.40%
+Epoch 28, Validation Loss: 3.7437, Validation Accuracy: 32.99%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-027.pth
+Epoch 29, Learning rate: 0.0010000000
+Epoch 29, Training Loss: 2.9881, Training Accuracy: 96.64%
+Epoch 29, Validation Loss: 3.7349, Validation Accuracy: 31.80%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-028.pth
+Epoch 30, Learning rate: 0.0010000000
+Epoch 30, Training Loss: 2.9856, Training Accuracy: 96.79%
+Epoch 30, Validation Loss: 3.7373, Validation Accuracy: 32.31%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-029.pth
+Epoch 31, Learning rate: 0.0010000000
+Epoch 31, Training Loss: 2.9833, Training Accuracy: 96.98%
+Epoch 31, Validation Loss: 3.7382, Validation Accuracy: 31.46%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-030.pth
+Epoch 32, Learning rate: 0.0010000000
+Epoch 32, Training Loss: 2.9814, Training Accuracy: 97.11%
+Epoch 32, Validation Loss: 3.7374, Validation Accuracy: 31.97%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-031.pth
+Epoch 33, Learning rate: 0.0010000000
+Epoch 33, Training Loss: 2.9805, Training Accuracy: 97.17%
+Epoch 33, Validation Loss: 3.7412, Validation Accuracy: 28.74%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-032.pth
+Epoch 34, Learning rate: 0.0010000000
+Epoch 34, Training Loss: 2.9778, Training Accuracy: 97.38%
+Epoch 34, Validation Loss: 3.7248, Validation Accuracy: 32.48%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-033.pth
+Epoch 35, Learning rate: 0.0010000000
+Epoch 35, Training Loss: 2.9763, Training Accuracy: 97.49%
+Epoch 35, Validation Loss: 3.7282, Validation Accuracy: 31.97%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-034.pth
+Epoch 36, Learning rate: 0.0010000000
+Epoch 36, Training Loss: 2.9761, Training Accuracy: 97.55%
+Epoch 36, Validation Loss: 3.7618, Validation Accuracy: 24.49%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-035.pth
+Epoch 37, Learning rate: 0.0010000000
+Epoch 37, Training Loss: 2.9749, Training Accuracy: 97.64%
+Epoch 37, Validation Loss: 3.7431, Validation Accuracy: 30.27%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-036.pth
+Epoch 38, Learning rate: 0.0010000000
+Epoch 38, Training Loss: 2.9738, Training Accuracy: 97.64%
+Epoch 38, Validation Loss: 3.7373, Validation Accuracy: 29.76%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-037.pth
+Epoch 39, Learning rate: 0.0010000000
+Epoch 39, Training Loss: 2.9724, Training Accuracy: 97.72%
+Epoch 39, Validation Loss: 3.7359, Validation Accuracy: 30.10%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-038.pth
+Epoch 40, Learning rate: 0.0010000000
+Epoch 40, Training Loss: 2.9722, Training Accuracy: 97.75%
+Epoch 40, Validation Loss: 3.7347, Validation Accuracy: 30.27%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-039.pth
+Epoch 41, Learning rate: 0.0010000000
+Epoch 41, Training Loss: 2.9712, Training Accuracy: 97.79%
+Epoch 41, Validation Loss: 3.7395, Validation Accuracy: 30.61%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-040.pth
+Epoch 42, Learning rate: 0.0010000000
+Epoch 42, Training Loss: 2.9717, Training Accuracy: 97.81%
+Epoch 42, Validation Loss: 3.7394, Validation Accuracy: 29.42%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-041.pth
+Epoch 43, Learning rate: 0.0010000000
+Epoch 43, Training Loss: 2.9707, Training Accuracy: 97.81%
+Epoch 43, Validation Loss: 3.7400, Validation Accuracy: 27.55%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-042.pth
+Epoch 44, Learning rate: 0.0010000000
+Epoch 44, Training Loss: 2.9701, Training Accuracy: 97.91%
+Epoch 44, Validation Loss: 3.7301, Validation Accuracy: 30.10%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-043.pth
+Epoch 45, Learning rate: 0.0010000000
+Epoch 45, Training Loss: 2.9694, Training Accuracy: 97.92%
+Epoch 45, Validation Loss: 3.7336, Validation Accuracy: 29.59%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-044.pth
+Epoch 46, Learning rate: 0.0010000000
+Epoch 46, Training Loss: 2.9686, Training Accuracy: 97.96%
+Epoch 46, Validation Loss: 3.7162, Validation Accuracy: 30.44%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-045.pth
+Epoch 47, Learning rate: 0.0010000000
+Epoch 47, Training Loss: 2.9683, Training Accuracy: 97.96%
+Epoch 47, Validation Loss: 3.7291, Validation Accuracy: 29.42%
+saved checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-046.pth
+Epoch 48, Learning rate: 0.0010000000

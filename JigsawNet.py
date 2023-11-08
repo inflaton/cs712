@@ -4,20 +4,17 @@ import torch.nn.functional as F
 
 
 class JigsawNet(nn.Module):
-    def __init__(self, n_classes=50, num_features=2048):
+    def __init__(self, n_classes=50, num_features=2048, relu_in_last_fc=True):
         super(JigsawNet, self).__init__()
 
         self.num_features = num_features
+        self.relu_in_last_fc = relu_in_last_fc
 
         self.fc1 = nn.Linear(num_features, 512)
         self.fc2 = nn.Linear(18432, 16384)
         self.fc3 = nn.Linear(16384, 4096)
         self.fc4 = nn.Linear(4096, n_classes)
         self.bn4 = nn.BatchNorm1d(n_classes)  # Batch normalization after fc4
-        # self.fc5 = nn.Sequential(
-        # nn.Dropout(0.1),
-        # nn.Linear(in_features=n_classes, out_features=n_classes),
-        # )
 
     def process_features(self, x):
         res = []
@@ -45,11 +42,11 @@ class JigsawNet(nn.Module):
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
 
-        x = F.relu(
-            self.bn4(self.fc4(x))
-        )  # Apply batch normalization after fc4 and before activation
+        # Apply batch normalization after fc4 and before activation
+        x = self.bn4(self.fc4(x))
+        if self.relu_in_last_fc:
+            x = F.relu(x)
 
-        # x = self.fc5(x)
-        x = F.softmax(x, dim=1)
+        # x = F.softmax(x, dim=1)
 
         return x
