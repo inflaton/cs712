@@ -1,0 +1,7 @@
+device: cuda
+checkpoint:  19 batch_size:  64 name:  test
+loaded validation data from: data/timm_preprocessed_test.npy
+loaded checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-019.pth
+loaded training data from: data/timm_preprocessed_train.npy
+checkpoint: 19 - final accuracy:98.166%
+results saved to: data/test-result.zip
