@@ -4,11 +4,18 @@ import torch.nn.functional as F
 
 
 class JigsawNet(nn.Module):
-    def __init__(self, n_classes=50, num_features=2048, relu_in_last_fc=True):
+    def __init__(
+        self,
+        n_classes=50,
+        num_features=2048,
+        relu_in_last_fc=True,
+        include_softmax=False,
+    ):
         super(JigsawNet, self).__init__()
 
         self.num_features = num_features
         self.relu_in_last_fc = relu_in_last_fc
+        self.include_softmax = include_softmax
 
         self.fc1 = nn.Linear(num_features, 512)
         self.fc2 = nn.Linear(18432, 16384)
@@ -47,6 +54,7 @@ class JigsawNet(nn.Module):
         if self.relu_in_last_fc:
             x = F.relu(x)
 
-        # x = F.softmax(x, dim=1)
+        if self.include_softmax:
+            x = F.softmax(x, dim=1)
 
         return x
