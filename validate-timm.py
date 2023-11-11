@@ -11,8 +11,8 @@ import torch.optim as optim
 import torch.nn.functional as F
 import argparse
 import timm
-from JigsawNet import JigsawNet
-from train_v8 import *
+from transform_data import JigsawModel
+from train_v9 import *
 
 
 class JigsawValidationDataset(Dataset):
@@ -123,7 +123,7 @@ parser.add_argument(
     "--checkpoint",
     type=int,
     help="checkpoint to evaluate",
-    default=19,
+    default=-1,
 )
 
 parser.add_argument(
@@ -146,12 +146,12 @@ print("checkpoint: ", checkpoint, "batch_size: ", batch_size, "name: ", name)
 
 if __name__ == "__main__":
     # Create the model
-    # model = JigsawModel(n_classes=num_classes).to(device)
-    model = JigsawNet(
-        n_classes=num_classes, num_features=3072, relu_in_last_fc=True
-    ).to(device)
+    model = JigsawModel(num_classes=num_classes).to(device)
+    # model = JigsawNet(
+    # n_classes=num_classes, num_features=3072, relu_in_last_fc=True
+    # ).to(device)
 
-    filename = f"data/timm_preprocessed_{name}.npy"
+    filename = f"data/distance_timm_preprocessed_{name}.npy"
     validation_data = np.load(filename)
     validation_data = torch.from_numpy(validation_data).float()
 

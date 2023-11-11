@@ -1,0 +1,2120 @@
+device: cuda
+epochs:  300 batch: 16 max_fold: 20
+Epoch 1, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 1, Training Loss: 3.8398, Training Accuracy: 15.09%
+Epoch 1, Validation Loss: 3.7367, Validation Accuracy: 15.97%
+Epoch 2, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 2, Training Loss: 3.5507, Training Accuracy: 43.09%
+Epoch 2, Validation Loss: 3.3568, Validation Accuracy: 38.05%
+Epoch 3, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 3, Training Loss: 3.1668, Training Accuracy: 52.98%
+Epoch 3, Validation Loss: 2.9084, Validation Accuracy: 49.72%
+Epoch 4, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 4, Training Loss: 2.8725, Training Accuracy: 61.28%
+Epoch 4, Validation Loss: 2.5361, Validation Accuracy: 67.72%
+Epoch 5, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 5, Training Loss: 2.6797, Training Accuracy: 66.91%
+Epoch 5, Validation Loss: 2.4023, Validation Accuracy: 63.08%
+Epoch 6, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 6, Training Loss: 2.5475, Training Accuracy: 69.48%
+Epoch 6, Validation Loss: 2.2664, Validation Accuracy: 64.78%
+Epoch 7, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 7, Training Loss: 2.4574, Training Accuracy: 70.40%
+Epoch 7, Validation Loss: 2.1371, Validation Accuracy: 77.01%
+Epoch 8, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 8, Training Loss: 2.3743, Training Accuracy: 72.78%
+Epoch 8, Validation Loss: 2.0111, Validation Accuracy: 76.10%
+Epoch 9, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 9, Training Loss: 2.3147, Training Accuracy: 75.01%
+Epoch 9, Validation Loss: 2.0672, Validation Accuracy: 67.61%
+Epoch 10, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 10, Training Loss: 2.2585, Training Accuracy: 77.00%
+Epoch 10, Validation Loss: 1.8978, Validation Accuracy: 75.42%
+Epoch 11, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 11, Training Loss: 2.2350, Training Accuracy: 75.84%
+Epoch 11, Validation Loss: 1.8551, Validation Accuracy: 73.50%
+Epoch 12, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 12, Training Loss: 2.1977, Training Accuracy: 75.16%
+Epoch 12, Validation Loss: 1.7515, Validation Accuracy: 81.20%
+Epoch 13, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 13, Training Loss: 2.1694, Training Accuracy: 75.21%
+Epoch 13, Validation Loss: 1.6521, Validation Accuracy: 81.99%
+Epoch 14, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 14, Training Loss: 2.1297, Training Accuracy: 76.86%
+Epoch 14, Validation Loss: 1.6440, Validation Accuracy: 83.58%
+Epoch 15, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 15, Training Loss: 2.0772, Training Accuracy: 78.60%
+Epoch 15, Validation Loss: 1.5833, Validation Accuracy: 83.13%
+Epoch 16, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 16, Training Loss: 2.0796, Training Accuracy: 78.55%
+Epoch 16, Validation Loss: 1.6138, Validation Accuracy: 85.84%
+Epoch 17, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 17, Training Loss: 2.0449, Training Accuracy: 78.65%
+Epoch 17, Validation Loss: 1.5255, Validation Accuracy: 82.67%
+Epoch 18, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 18, Training Loss: 2.0358, Training Accuracy: 78.94%
+Epoch 18, Validation Loss: 1.5241, Validation Accuracy: 83.92%
+Epoch 19, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 19, Training Loss: 2.0149, Training Accuracy: 78.36%
+Epoch 19, Validation Loss: 1.3841, Validation Accuracy: 88.79%
+Epoch 20, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 20, Training Loss: 1.9975, Training Accuracy: 79.57%
+Epoch 20, Validation Loss: 1.4145, Validation Accuracy: 87.09%
+Epoch 21, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 21, Training Loss: 1.9553, Training Accuracy: 80.40%
+Epoch 21, Validation Loss: 1.3919, Validation Accuracy: 84.82%
+Epoch 22, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 22, Training Loss: 1.9419, Training Accuracy: 81.22%
+Epoch 22, Validation Loss: 1.4220, Validation Accuracy: 86.98%
+Epoch 23, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 23, Training Loss: 1.9312, Training Accuracy: 80.25%
+Epoch 23, Validation Loss: 1.4502, Validation Accuracy: 81.20%
+Epoch 24, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 24, Training Loss: 1.9145, Training Accuracy: 79.38%
+Epoch 24, Validation Loss: 1.3553, Validation Accuracy: 87.20%
+Epoch 25, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 25, Training Loss: 1.9006, Training Accuracy: 81.47%
+Epoch 25, Validation Loss: 1.3434, Validation Accuracy: 86.86%
+Epoch 26, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 26, Training Loss: 1.8900, Training Accuracy: 79.77%
+Epoch 26, Validation Loss: 1.3440, Validation Accuracy: 88.34%
+Epoch 27, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 27, Training Loss: 1.8660, Training Accuracy: 80.06%
+Epoch 27, Validation Loss: 1.3237, Validation Accuracy: 85.16%
+Epoch 28, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 28, Training Loss: 1.8633, Training Accuracy: 80.98%
+Epoch 28, Validation Loss: 1.3773, Validation Accuracy: 82.79%
+Epoch 29, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 29, Training Loss: 1.8412, Training Accuracy: 81.51%
+Epoch 29, Validation Loss: 1.3121, Validation Accuracy: 87.20%
+Epoch 30, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 30, Training Loss: 1.8385, Training Accuracy: 80.25%
+Epoch 30, Validation Loss: 1.2409, Validation Accuracy: 87.66%
+Epoch 31, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 31, Training Loss: 1.8122, Training Accuracy: 81.22%
+Epoch 31, Validation Loss: 1.2600, Validation Accuracy: 88.00%
+Epoch 32, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 32, Training Loss: 1.8055, Training Accuracy: 80.59%
+Epoch 32, Validation Loss: 1.1686, Validation Accuracy: 89.35%
+Epoch 33, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 33, Training Loss: 1.7800, Training Accuracy: 81.42%
+Epoch 33, Validation Loss: 1.2511, Validation Accuracy: 87.77%
+Epoch 34, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 34, Training Loss: 1.7936, Training Accuracy: 81.71%
+Epoch 34, Validation Loss: 1.2599, Validation Accuracy: 86.75%
+Epoch 35, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 35, Training Loss: 1.7504, Training Accuracy: 82.14%
+Epoch 35, Validation Loss: 1.2592, Validation Accuracy: 86.75%
+Epoch 36, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 36, Training Loss: 1.7697, Training Accuracy: 81.13%
+Epoch 36, Validation Loss: 1.1530, Validation Accuracy: 87.54%
+Epoch 37, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 37, Training Loss: 1.7669, Training Accuracy: 82.05%
+Epoch 37, Validation Loss: 1.1080, Validation Accuracy: 91.17%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-036.pth
+Epoch 38, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 38, Training Loss: 1.7537, Training Accuracy: 81.71%
+Epoch 38, Validation Loss: 1.1766, Validation Accuracy: 89.92%
+Epoch 39, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 39, Training Loss: 1.7512, Training Accuracy: 82.00%
+Epoch 39, Validation Loss: 1.1220, Validation Accuracy: 90.03%
+Epoch 40, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 40, Training Loss: 1.7263, Training Accuracy: 81.66%
+Epoch 40, Validation Loss: 1.1557, Validation Accuracy: 89.92%
+Epoch 41, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 41, Training Loss: 1.7089, Training Accuracy: 82.73%
+Epoch 41, Validation Loss: 1.1461, Validation Accuracy: 89.13%
+Epoch 42, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 42, Training Loss: 1.7006, Training Accuracy: 82.63%
+Epoch 42, Validation Loss: 1.1256, Validation Accuracy: 89.35%
+Epoch 43, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 43, Training Loss: 1.7103, Training Accuracy: 81.71%
+Epoch 43, Validation Loss: 1.0677, Validation Accuracy: 90.49%
+Epoch 44, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 44, Training Loss: 1.6814, Training Accuracy: 83.07%
+Epoch 44, Validation Loss: 1.1608, Validation Accuracy: 90.15%
+Epoch 45, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 45, Training Loss: 1.6611, Training Accuracy: 83.70%
+Epoch 45, Validation Loss: 1.1193, Validation Accuracy: 88.79%
+Epoch 46, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 46, Training Loss: 1.6494, Training Accuracy: 83.31%
+Epoch 46, Validation Loss: 1.1637, Validation Accuracy: 86.64%
+Epoch 47, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 47, Training Loss: 1.6731, Training Accuracy: 81.42%
+Epoch 47, Validation Loss: 1.0453, Validation Accuracy: 89.35%
+Epoch 48, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 48, Training Loss: 1.6601, Training Accuracy: 82.48%
+Epoch 48, Validation Loss: 1.0893, Validation Accuracy: 89.92%
+Epoch 49, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 49, Training Loss: 1.6512, Training Accuracy: 82.58%
+Epoch 49, Validation Loss: 1.0649, Validation Accuracy: 90.49%
+Epoch 50, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 50, Training Loss: 1.6238, Training Accuracy: 82.92%
+Epoch 50, Validation Loss: 1.0367, Validation Accuracy: 90.60%
+Epoch 51, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 51, Training Loss: 1.6284, Training Accuracy: 82.82%
+Epoch 51, Validation Loss: 1.0616, Validation Accuracy: 89.35%
+Epoch 52, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 52, Training Loss: 1.6236, Training Accuracy: 83.21%
+Epoch 52, Validation Loss: 1.0678, Validation Accuracy: 90.15%
+Epoch 53, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 53, Training Loss: 1.6361, Training Accuracy: 80.98%
+Epoch 53, Validation Loss: 0.9837, Validation Accuracy: 90.37%
+Epoch 54, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 54, Training Loss: 1.6037, Training Accuracy: 83.84%
+Epoch 54, Validation Loss: 1.0415, Validation Accuracy: 90.37%
+Epoch 55, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 55, Training Loss: 1.5905, Training Accuracy: 83.16%
+Epoch 55, Validation Loss: 1.0398, Validation Accuracy: 88.79%
+Epoch 56, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 56, Training Loss: 1.5919, Training Accuracy: 83.36%
+Epoch 56, Validation Loss: 0.9807, Validation Accuracy: 90.94%
+Epoch 57, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 57, Training Loss: 1.5892, Training Accuracy: 82.73%
+Epoch 57, Validation Loss: 0.9899, Validation Accuracy: 91.17%
+Epoch 58, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 58, Training Loss: 1.5901, Training Accuracy: 82.63%
+Epoch 58, Validation Loss: 0.9642, Validation Accuracy: 91.39%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-057.pth
+Epoch 59, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 59, Training Loss: 1.5475, Training Accuracy: 84.52%
+Epoch 59, Validation Loss: 0.9803, Validation Accuracy: 91.51%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-058.pth
+Epoch 60, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 60, Training Loss: 1.5784, Training Accuracy: 82.29%
+Epoch 60, Validation Loss: 0.9322, Validation Accuracy: 90.71%
+Epoch 61, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 61, Training Loss: 1.5474, Training Accuracy: 83.65%
+Epoch 61, Validation Loss: 1.0016, Validation Accuracy: 90.71%
+Epoch 62, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 62, Training Loss: 1.5157, Training Accuracy: 84.86%
+Epoch 62, Validation Loss: 0.9599, Validation Accuracy: 91.05%
+Epoch 63, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 63, Training Loss: 1.5477, Training Accuracy: 83.50%
+Epoch 63, Validation Loss: 0.9197, Validation Accuracy: 91.28%
+Epoch 64, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 64, Training Loss: 1.5415, Training Accuracy: 81.76%
+Epoch 64, Validation Loss: 0.9571, Validation Accuracy: 90.37%
+Epoch 65, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 65, Training Loss: 1.5416, Training Accuracy: 83.11%
+Epoch 65, Validation Loss: 0.9422, Validation Accuracy: 90.49%
+Epoch 66, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 66, Training Loss: 1.5139, Training Accuracy: 83.89%
+Epoch 66, Validation Loss: 0.9439, Validation Accuracy: 90.94%
+Epoch 67, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 67, Training Loss: 1.5171, Training Accuracy: 83.55%
+Epoch 67, Validation Loss: 0.8901, Validation Accuracy: 91.96%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-066.pth
+Epoch 68, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 68, Training Loss: 1.5059, Training Accuracy: 82.63%
+Epoch 68, Validation Loss: 0.9037, Validation Accuracy: 91.39%
+Epoch 69, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 69, Training Loss: 1.4831, Training Accuracy: 84.43%
+Epoch 69, Validation Loss: 0.8753, Validation Accuracy: 92.98%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-068.pth
+Epoch 70, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 70, Training Loss: 1.4912, Training Accuracy: 83.36%
+Epoch 70, Validation Loss: 0.8377, Validation Accuracy: 93.20%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-069.pth
+Epoch 71, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 71, Training Loss: 1.4798, Training Accuracy: 84.09%
+Epoch 71, Validation Loss: 0.8194, Validation Accuracy: 92.07%
+Epoch 72, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 72, Training Loss: 1.4954, Training Accuracy: 81.76%
+Epoch 72, Validation Loss: 0.8489, Validation Accuracy: 91.96%
+Epoch 73, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 73, Training Loss: 1.4739, Training Accuracy: 83.70%
+Epoch 73, Validation Loss: 0.8356, Validation Accuracy: 91.51%
+Epoch 74, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 74, Training Loss: 1.4794, Training Accuracy: 83.94%
+Epoch 74, Validation Loss: 0.8351, Validation Accuracy: 92.19%
+Epoch 75, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 75, Training Loss: 1.4480, Training Accuracy: 83.89%
+Epoch 75, Validation Loss: 0.8539, Validation Accuracy: 91.39%
+Epoch 76, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 76, Training Loss: 1.4373, Training Accuracy: 84.28%
+Epoch 76, Validation Loss: 0.8498, Validation Accuracy: 91.28%
+Epoch 77, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 77, Training Loss: 1.4292, Training Accuracy: 84.18%
+Epoch 77, Validation Loss: 0.8750, Validation Accuracy: 91.39%
+Epoch 78, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 78, Training Loss: 1.4323, Training Accuracy: 83.84%
+Epoch 78, Validation Loss: 0.8035, Validation Accuracy: 92.87%
+Epoch 79, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 79, Training Loss: 1.4178, Training Accuracy: 82.87%
+Epoch 79, Validation Loss: 0.8235, Validation Accuracy: 92.30%
+Epoch 80, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 80, Training Loss: 1.4384, Training Accuracy: 83.31%
+Epoch 80, Validation Loss: 0.7788, Validation Accuracy: 93.09%
+Epoch 81, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 81, Training Loss: 1.4348, Training Accuracy: 83.21%
+Epoch 81, Validation Loss: 0.8427, Validation Accuracy: 90.94%
+Epoch 82, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 82, Training Loss: 1.4283, Training Accuracy: 83.26%
+Epoch 82, Validation Loss: 0.7771, Validation Accuracy: 94.00%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-081.pth
+Epoch 83, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 83, Training Loss: 1.3954, Training Accuracy: 84.72%
+Epoch 83, Validation Loss: 0.8235, Validation Accuracy: 92.41%
+Epoch 84, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 84, Training Loss: 1.3866, Training Accuracy: 85.15%
+Epoch 84, Validation Loss: 0.8678, Validation Accuracy: 90.03%
+Epoch 85, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 85, Training Loss: 1.3822, Training Accuracy: 84.47%
+Epoch 85, Validation Loss: 0.8029, Validation Accuracy: 93.43%
+Epoch 86, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 86, Training Loss: 1.3886, Training Accuracy: 84.09%
+Epoch 86, Validation Loss: 0.8298, Validation Accuracy: 90.15%
+Epoch 87, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 87, Training Loss: 1.3762, Training Accuracy: 84.86%
+Epoch 87, Validation Loss: 0.8618, Validation Accuracy: 91.17%
+Epoch 88, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 88, Training Loss: 1.3797, Training Accuracy: 83.07%
+Epoch 88, Validation Loss: 0.7948, Validation Accuracy: 91.62%
+Epoch 89, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 89, Training Loss: 1.3561, Training Accuracy: 85.15%
+Epoch 89, Validation Loss: 0.7329, Validation Accuracy: 92.64%
+Epoch 90, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 90, Training Loss: 1.3607, Training Accuracy: 83.60%
+Epoch 90, Validation Loss: 0.7351, Validation Accuracy: 93.88%
+Epoch 91, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 91, Training Loss: 1.3488, Training Accuracy: 84.91%
+Epoch 91, Validation Loss: 0.7831, Validation Accuracy: 91.73%
+Epoch 92, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 92, Training Loss: 1.3530, Training Accuracy: 84.76%
+Epoch 92, Validation Loss: 0.7467, Validation Accuracy: 92.07%
+Epoch 93, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 93, Training Loss: 1.3424, Training Accuracy: 84.33%
+Epoch 93, Validation Loss: 0.7732, Validation Accuracy: 91.51%
+Epoch 94, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 94, Training Loss: 1.3210, Training Accuracy: 85.20%
+Epoch 94, Validation Loss: 0.8998, Validation Accuracy: 89.13%
+Epoch 95, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 95, Training Loss: 1.3334, Training Accuracy: 84.86%
+Epoch 95, Validation Loss: 0.7791, Validation Accuracy: 91.28%
+Epoch 96, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 96, Training Loss: 1.3469, Training Accuracy: 83.89%
+Epoch 96, Validation Loss: 0.7322, Validation Accuracy: 93.09%
+Epoch 97, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 97, Training Loss: 1.3119, Training Accuracy: 84.72%
+Epoch 97, Validation Loss: 0.7525, Validation Accuracy: 93.32%
+Epoch 98, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 98, Training Loss: 1.3227, Training Accuracy: 84.86%
+Epoch 98, Validation Loss: 0.7430, Validation Accuracy: 91.85%
+Epoch 99, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 99, Training Loss: 1.3106, Training Accuracy: 85.69%
+Epoch 99, Validation Loss: 0.7388, Validation Accuracy: 93.09%
+Epoch 100, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 100, Training Loss: 1.2970, Training Accuracy: 85.78%
+Epoch 100, Validation Loss: 0.8352, Validation Accuracy: 90.71%
+Epoch 101, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 101, Training Loss: 1.3148, Training Accuracy: 84.47%
+Epoch 101, Validation Loss: 0.7590, Validation Accuracy: 91.05%
+Epoch 102, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 102, Training Loss: 1.2970, Training Accuracy: 85.40%
+Epoch 102, Validation Loss: 0.7408, Validation Accuracy: 91.73%
+Epoch 103, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 103, Training Loss: 1.2703, Training Accuracy: 86.03%
+Epoch 103, Validation Loss: 0.7394, Validation Accuracy: 93.20%
+Epoch 104, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 104, Training Loss: 1.2793, Training Accuracy: 85.10%
+Epoch 104, Validation Loss: 0.7152, Validation Accuracy: 92.75%
+Epoch 105, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 105, Training Loss: 1.2885, Training Accuracy: 84.57%
+Epoch 105, Validation Loss: 0.6905, Validation Accuracy: 94.68%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-104.pth
+Epoch 106, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 106, Training Loss: 1.2882, Training Accuracy: 84.43%
+Epoch 106, Validation Loss: 0.7440, Validation Accuracy: 92.41%
+Epoch 107, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 107, Training Loss: 1.2833, Training Accuracy: 85.10%
+Epoch 107, Validation Loss: 0.7554, Validation Accuracy: 90.94%
+Epoch 108, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 108, Training Loss: 1.2481, Training Accuracy: 85.35%
+Epoch 108, Validation Loss: 0.7615, Validation Accuracy: 89.81%
+Epoch 109, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 109, Training Loss: 1.2630, Training Accuracy: 84.67%
+Epoch 109, Validation Loss: 0.6739, Validation Accuracy: 92.64%
+Epoch 110, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 110, Training Loss: 1.2554, Training Accuracy: 86.22%
+Epoch 110, Validation Loss: 0.6684, Validation Accuracy: 94.34%
+Epoch 111, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 111, Training Loss: 1.2409, Training Accuracy: 85.49%
+Epoch 111, Validation Loss: 0.6624, Validation Accuracy: 92.30%
+Epoch 112, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 112, Training Loss: 1.2668, Training Accuracy: 84.62%
+Epoch 112, Validation Loss: 0.7619, Validation Accuracy: 92.07%
+Epoch 113, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 113, Training Loss: 1.2541, Training Accuracy: 85.06%
+Epoch 113, Validation Loss: 0.7003, Validation Accuracy: 92.98%
+Epoch 114, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 114, Training Loss: 1.2501, Training Accuracy: 85.64%
+Epoch 114, Validation Loss: 0.6045, Validation Accuracy: 93.88%
+Epoch 115, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 115, Training Loss: 1.2406, Training Accuracy: 85.54%
+Epoch 115, Validation Loss: 0.6814, Validation Accuracy: 91.39%
+Epoch 116, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 116, Training Loss: 1.2330, Training Accuracy: 85.20%
+Epoch 116, Validation Loss: 0.6786, Validation Accuracy: 93.66%
+Epoch 117, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 117, Training Loss: 1.2274, Training Accuracy: 85.54%
+Epoch 117, Validation Loss: 0.7219, Validation Accuracy: 92.64%
+Epoch 118, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 118, Training Loss: 1.1855, Training Accuracy: 86.90%
+Epoch 118, Validation Loss: 0.7127, Validation Accuracy: 92.07%
+Epoch 119, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 119, Training Loss: 1.2038, Training Accuracy: 85.78%
+Epoch 119, Validation Loss: 0.6572, Validation Accuracy: 93.54%
+Epoch 120, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 120, Training Loss: 1.2024, Training Accuracy: 85.20%
+Epoch 120, Validation Loss: 0.7060, Validation Accuracy: 92.30%
+Epoch 121, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 121, Training Loss: 1.1999, Training Accuracy: 85.40%
+Epoch 121, Validation Loss: 0.6959, Validation Accuracy: 92.30%
+Epoch 122, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 122, Training Loss: 1.2151, Training Accuracy: 84.33%
+Epoch 122, Validation Loss: 0.6075, Validation Accuracy: 94.56%
+Epoch 123, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 123, Training Loss: 1.1796, Training Accuracy: 87.19%
+Epoch 123, Validation Loss: 0.7235, Validation Accuracy: 90.60%
+Epoch 124, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 124, Training Loss: 1.1836, Training Accuracy: 85.83%
+Epoch 124, Validation Loss: 0.6869, Validation Accuracy: 91.39%
+Epoch 125, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 125, Training Loss: 1.2071, Training Accuracy: 85.64%
+Epoch 125, Validation Loss: 0.6439, Validation Accuracy: 93.09%
+Epoch 126, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 126, Training Loss: 1.2094, Training Accuracy: 85.06%
+Epoch 126, Validation Loss: 0.6416, Validation Accuracy: 91.73%
+Epoch 127, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 127, Training Loss: 1.1655, Training Accuracy: 85.69%
+Epoch 127, Validation Loss: 0.7075, Validation Accuracy: 90.60%
+Epoch 128, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 128, Training Loss: 1.1988, Training Accuracy: 84.67%
+Epoch 128, Validation Loss: 0.7136, Validation Accuracy: 90.37%
+Epoch 129, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 129, Training Loss: 1.1517, Training Accuracy: 86.51%
+Epoch 129, Validation Loss: 0.6495, Validation Accuracy: 93.88%
+Epoch 130, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 130, Training Loss: 1.1602, Training Accuracy: 86.41%
+Epoch 130, Validation Loss: 0.6483, Validation Accuracy: 92.64%
+Epoch 131, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 131, Training Loss: 1.1742, Training Accuracy: 85.49%
+Epoch 131, Validation Loss: 0.6300, Validation Accuracy: 93.66%
+Epoch 132, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 132, Training Loss: 1.1591, Training Accuracy: 85.83%
+Epoch 132, Validation Loss: 0.6688, Validation Accuracy: 92.87%
+Epoch 133, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 133, Training Loss: 1.1420, Training Accuracy: 86.22%
+Epoch 133, Validation Loss: 0.6703, Validation Accuracy: 92.19%
+Epoch 134, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 134, Training Loss: 1.1607, Training Accuracy: 86.27%
+Epoch 134, Validation Loss: 0.5936, Validation Accuracy: 92.87%
+Epoch 135, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 135, Training Loss: 1.1272, Training Accuracy: 86.80%
+Epoch 135, Validation Loss: 0.6318, Validation Accuracy: 92.07%
+Epoch 136, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 136, Training Loss: 1.1401, Training Accuracy: 85.54%
+Epoch 136, Validation Loss: 0.6939, Validation Accuracy: 90.94%
+Epoch 137, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 137, Training Loss: 1.1167, Training Accuracy: 86.85%
+Epoch 137, Validation Loss: 0.6423, Validation Accuracy: 90.71%
+Epoch 138, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 138, Training Loss: 1.1480, Training Accuracy: 85.44%
+Epoch 138, Validation Loss: 0.6577, Validation Accuracy: 91.96%
+Epoch 139, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 139, Training Loss: 1.1261, Training Accuracy: 86.66%
+Epoch 139, Validation Loss: 0.5758, Validation Accuracy: 94.00%
+Epoch 140, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 140, Training Loss: 1.1341, Training Accuracy: 85.88%
+Epoch 140, Validation Loss: 0.6411, Validation Accuracy: 92.53%
+Epoch 141, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 141, Training Loss: 1.1185, Training Accuracy: 86.07%
+Epoch 141, Validation Loss: 0.5786, Validation Accuracy: 94.68%
+Epoch 142, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 142, Training Loss: 1.1059, Training Accuracy: 86.37%
+Epoch 142, Validation Loss: 0.5609, Validation Accuracy: 93.54%
+Epoch 143, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 143, Training Loss: 1.1237, Training Accuracy: 85.78%
+Epoch 143, Validation Loss: 0.6106, Validation Accuracy: 90.60%
+Epoch 144, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 144, Training Loss: 1.1236, Training Accuracy: 85.54%
+Epoch 144, Validation Loss: 0.6248, Validation Accuracy: 93.43%
+Epoch 145, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 145, Training Loss: 1.1169, Training Accuracy: 86.61%
+Epoch 145, Validation Loss: 0.5901, Validation Accuracy: 93.32%
+Epoch 146, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 146, Training Loss: 1.0775, Training Accuracy: 88.50%
+Epoch 146, Validation Loss: 0.6290, Validation Accuracy: 90.60%
+Epoch 147, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 147, Training Loss: 1.0848, Training Accuracy: 87.29%
+Epoch 147, Validation Loss: 0.6072, Validation Accuracy: 93.09%
+Epoch 148, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 148, Training Loss: 1.1189, Training Accuracy: 86.07%
+Epoch 148, Validation Loss: 0.5631, Validation Accuracy: 91.73%
+Epoch 149, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 149, Training Loss: 1.0871, Training Accuracy: 87.09%
+Epoch 149, Validation Loss: 0.5799, Validation Accuracy: 94.22%
+Epoch 150, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 150, Training Loss: 1.0773, Training Accuracy: 87.68%
+Epoch 150, Validation Loss: 0.6602, Validation Accuracy: 90.37%
+Epoch 151, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 151, Training Loss: 1.0750, Training Accuracy: 87.09%
+Epoch 151, Validation Loss: 0.6197, Validation Accuracy: 91.05%
+Epoch 152, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 152, Training Loss: 1.0650, Training Accuracy: 86.07%
+Epoch 152, Validation Loss: 0.6087, Validation Accuracy: 92.41%
+Epoch 153, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 153, Training Loss: 1.0834, Training Accuracy: 85.35%
+Epoch 153, Validation Loss: 0.5795, Validation Accuracy: 93.43%
+Epoch 154, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 154, Training Loss: 1.0592, Training Accuracy: 87.05%
+Epoch 154, Validation Loss: 0.5595, Validation Accuracy: 92.75%
+Epoch 155, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 155, Training Loss: 1.0529, Training Accuracy: 87.19%
+Epoch 155, Validation Loss: 0.6075, Validation Accuracy: 92.30%
+Epoch 156, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 156, Training Loss: 1.0660, Training Accuracy: 86.12%
+Epoch 156, Validation Loss: 0.5288, Validation Accuracy: 92.98%
+Epoch 157, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 157, Training Loss: 1.0559, Training Accuracy: 86.80%
+Epoch 157, Validation Loss: 0.5921, Validation Accuracy: 92.87%
+Epoch 158, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 158, Training Loss: 1.0797, Training Accuracy: 87.09%
+Epoch 158, Validation Loss: 0.5822, Validation Accuracy: 92.64%
+Epoch 159, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 159, Training Loss: 1.0537, Training Accuracy: 86.27%
+Epoch 159, Validation Loss: 0.6146, Validation Accuracy: 90.37%
+Epoch 160, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 160, Training Loss: 1.0409, Training Accuracy: 86.17%
+Epoch 160, Validation Loss: 0.6274, Validation Accuracy: 90.83%
+Epoch 161, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 161, Training Loss: 1.0655, Training Accuracy: 86.12%
+Epoch 161, Validation Loss: 0.5735, Validation Accuracy: 92.41%
+Epoch 162, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 162, Training Loss: 1.0308, Training Accuracy: 88.40%
+Epoch 162, Validation Loss: 0.5489, Validation Accuracy: 94.00%
+Epoch 163, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 163, Training Loss: 1.0579, Training Accuracy: 86.51%
+Epoch 163, Validation Loss: 0.5505, Validation Accuracy: 92.41%
+Epoch 164, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 164, Training Loss: 1.0113, Training Accuracy: 87.48%
+Epoch 164, Validation Loss: 0.5710, Validation Accuracy: 94.00%
+Epoch 165, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 165, Training Loss: 1.0244, Training Accuracy: 87.00%
+Epoch 165, Validation Loss: 0.5569, Validation Accuracy: 93.77%
+Epoch 166, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 166, Training Loss: 1.0315, Training Accuracy: 86.32%
+Epoch 166, Validation Loss: 0.5950, Validation Accuracy: 90.83%
+Epoch 167, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 167, Training Loss: 1.0025, Training Accuracy: 87.77%
+Epoch 167, Validation Loss: 0.5563, Validation Accuracy: 93.88%
+Epoch 168, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 168, Training Loss: 1.0207, Training Accuracy: 87.29%
+Epoch 168, Validation Loss: 0.5736, Validation Accuracy: 92.64%
+Epoch 169, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 169, Training Loss: 0.9858, Training Accuracy: 88.65%
+Epoch 169, Validation Loss: 0.6034, Validation Accuracy: 92.41%
+Epoch 170, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 170, Training Loss: 1.0202, Training Accuracy: 86.80%
+Epoch 170, Validation Loss: 0.5140, Validation Accuracy: 93.43%
+Epoch 171, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 171, Training Loss: 1.0346, Training Accuracy: 86.07%
+Epoch 171, Validation Loss: 0.5639, Validation Accuracy: 92.75%
+Epoch 172, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 172, Training Loss: 1.0151, Training Accuracy: 85.98%
+Epoch 172, Validation Loss: 0.5256, Validation Accuracy: 92.87%
+Epoch 173, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 173, Training Loss: 1.0043, Training Accuracy: 86.32%
+Epoch 173, Validation Loss: 0.5506, Validation Accuracy: 91.39%
+Epoch 174, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 174, Training Loss: 0.9804, Training Accuracy: 87.58%
+Epoch 174, Validation Loss: 0.5497, Validation Accuracy: 93.20%
+Epoch 175, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 175, Training Loss: 1.0273, Training Accuracy: 86.17%
+Epoch 175, Validation Loss: 0.5062, Validation Accuracy: 93.66%
+Epoch 176, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 176, Training Loss: 1.0109, Training Accuracy: 85.83%
+Epoch 176, Validation Loss: 0.5263, Validation Accuracy: 91.85%
+Epoch 177, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 177, Training Loss: 0.9842, Training Accuracy: 87.00%
+Epoch 177, Validation Loss: 0.5504, Validation Accuracy: 92.30%
+Epoch 178, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 178, Training Loss: 0.9859, Training Accuracy: 87.19%
+Epoch 178, Validation Loss: 0.5087, Validation Accuracy: 92.64%
+Epoch 179, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 179, Training Loss: 0.9838, Training Accuracy: 86.80%
+Epoch 179, Validation Loss: 0.5373, Validation Accuracy: 93.66%
+Epoch 180, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 180, Training Loss: 1.0161, Training Accuracy: 86.12%
+Epoch 180, Validation Loss: 0.5229, Validation Accuracy: 93.32%
+Epoch 181, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 181, Training Loss: 0.9697, Training Accuracy: 86.56%
+Epoch 181, Validation Loss: 0.5403, Validation Accuracy: 91.96%
+Epoch 182, Learning rate: 0.0001000000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 182, Training Loss: 0.9538, Training Accuracy: 88.26%
+Epoch 182, Validation Loss: 0.4841, Validation Accuracy: 93.20%
+Epoch 183, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 183, Training Loss: 0.9514, Training Accuracy: 87.29%
+Epoch 183, Validation Loss: 0.4235, Validation Accuracy: 95.13%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-182.pth
+Epoch 184, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 184, Training Loss: 0.9671, Training Accuracy: 86.90%
+Epoch 184, Validation Loss: 0.4899, Validation Accuracy: 95.36%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-183.pth
+Epoch 185, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 185, Training Loss: 0.9587, Training Accuracy: 87.38%
+Epoch 185, Validation Loss: 0.4597, Validation Accuracy: 95.02%
+Epoch 186, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 186, Training Loss: 0.9316, Training Accuracy: 87.24%
+Epoch 186, Validation Loss: 0.4707, Validation Accuracy: 95.13%
+Epoch 187, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 187, Training Loss: 0.9650, Training Accuracy: 86.27%
+Epoch 187, Validation Loss: 0.4361, Validation Accuracy: 95.47%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-186.pth
+Epoch 188, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 188, Training Loss: 0.9534, Training Accuracy: 87.68%
+Epoch 188, Validation Loss: 0.4839, Validation Accuracy: 94.00%
+Epoch 189, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 189, Training Loss: 0.9413, Training Accuracy: 88.11%
+Epoch 189, Validation Loss: 0.4409, Validation Accuracy: 95.02%
+Epoch 190, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 190, Training Loss: 0.9355, Training Accuracy: 88.31%
+Epoch 190, Validation Loss: 0.4408, Validation Accuracy: 95.70%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-189.pth
+Epoch 191, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 191, Training Loss: 0.9539, Training Accuracy: 87.72%
+Epoch 191, Validation Loss: 0.4470, Validation Accuracy: 94.90%
+Epoch 192, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 192, Training Loss: 0.9373, Training Accuracy: 87.77%
+Epoch 192, Validation Loss: 0.4279, Validation Accuracy: 95.02%
+Epoch 193, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 193, Training Loss: 0.9156, Training Accuracy: 88.84%
+Epoch 193, Validation Loss: 0.4278, Validation Accuracy: 94.68%
+Epoch 194, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 194, Training Loss: 0.8999, Training Accuracy: 89.37%
+Epoch 194, Validation Loss: 0.4531, Validation Accuracy: 95.92%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-193.pth
+Epoch 195, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 195, Training Loss: 0.9462, Training Accuracy: 87.72%
+Epoch 195, Validation Loss: 0.4593, Validation Accuracy: 95.81%
+Epoch 196, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 196, Training Loss: 0.9270, Training Accuracy: 88.06%
+Epoch 196, Validation Loss: 0.4301, Validation Accuracy: 96.15%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-195.pth
+Epoch 197, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 197, Training Loss: 0.9200, Training Accuracy: 90.10%
+Epoch 197, Validation Loss: 0.4157, Validation Accuracy: 95.81%
+Epoch 198, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 198, Training Loss: 0.9331, Training Accuracy: 88.31%
+Epoch 198, Validation Loss: 0.4211, Validation Accuracy: 95.81%
+Epoch 199, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 199, Training Loss: 0.9375, Training Accuracy: 88.40%
+Epoch 199, Validation Loss: 0.3973, Validation Accuracy: 95.02%
+Epoch 200, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 200, Training Loss: 0.9251, Training Accuracy: 88.36%
+Epoch 200, Validation Loss: 0.4309, Validation Accuracy: 95.36%
+Epoch 201, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 201, Training Loss: 0.9049, Training Accuracy: 89.33%
+Epoch 201, Validation Loss: 0.4046, Validation Accuracy: 96.04%
+Epoch 202, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 202, Training Loss: 0.8935, Training Accuracy: 89.28%
+Epoch 202, Validation Loss: 0.4220, Validation Accuracy: 95.92%
+Epoch 203, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 203, Training Loss: 0.9260, Training Accuracy: 88.69%
+Epoch 203, Validation Loss: 0.4383, Validation Accuracy: 94.34%
+Epoch 204, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 204, Training Loss: 0.9379, Training Accuracy: 88.21%
+Epoch 204, Validation Loss: 0.4238, Validation Accuracy: 94.79%
+Epoch 205, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 205, Training Loss: 0.9448, Training Accuracy: 88.11%
+Epoch 205, Validation Loss: 0.4301, Validation Accuracy: 95.36%
+Epoch 206, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 206, Training Loss: 0.9106, Training Accuracy: 89.37%
+Epoch 206, Validation Loss: 0.4599, Validation Accuracy: 94.22%
+Epoch 207, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 207, Training Loss: 0.9186, Training Accuracy: 88.89%
+Epoch 207, Validation Loss: 0.4465, Validation Accuracy: 95.02%
+Epoch 208, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 208, Training Loss: 0.9403, Training Accuracy: 87.38%
+Epoch 208, Validation Loss: 0.4500, Validation Accuracy: 93.54%
+Epoch 209, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 209, Training Loss: 0.9434, Training Accuracy: 88.06%
+Epoch 209, Validation Loss: 0.4137, Validation Accuracy: 95.70%
+Epoch 210, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 210, Training Loss: 0.9090, Training Accuracy: 89.23%
+Epoch 210, Validation Loss: 0.4186, Validation Accuracy: 96.72%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-209.pth
+Epoch 211, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 211, Training Loss: 0.9245, Training Accuracy: 88.02%
+Epoch 211, Validation Loss: 0.4287, Validation Accuracy: 94.79%
+Epoch 212, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 212, Training Loss: 0.9111, Training Accuracy: 88.50%
+Epoch 212, Validation Loss: 0.4138, Validation Accuracy: 95.92%
+Epoch 213, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 213, Training Loss: 0.9025, Training Accuracy: 89.37%
+Epoch 213, Validation Loss: 0.4738, Validation Accuracy: 93.66%
+Epoch 214, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 214, Training Loss: 0.9224, Training Accuracy: 88.06%
+Epoch 214, Validation Loss: 0.4269, Validation Accuracy: 96.04%
+Epoch 215, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 215, Training Loss: 0.9117, Training Accuracy: 88.99%
+Epoch 215, Validation Loss: 0.4364, Validation Accuracy: 95.24%
+Epoch 216, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 216, Training Loss: 0.9075, Training Accuracy: 87.87%
+Epoch 216, Validation Loss: 0.4185, Validation Accuracy: 96.60%
+Epoch 217, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 217, Training Loss: 0.9083, Training Accuracy: 87.68%
+Epoch 217, Validation Loss: 0.4065, Validation Accuracy: 95.81%
+Epoch 218, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 218, Training Loss: 0.9153, Training Accuracy: 88.31%
+Epoch 218, Validation Loss: 0.4144, Validation Accuracy: 95.24%
+Epoch 219, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 219, Training Loss: 0.8976, Training Accuracy: 88.60%
+Epoch 219, Validation Loss: 0.4009, Validation Accuracy: 96.04%
+Epoch 220, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 220, Training Loss: 0.8995, Training Accuracy: 90.30%
+Epoch 220, Validation Loss: 0.4498, Validation Accuracy: 94.11%
+Epoch 221, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 221, Training Loss: 0.9153, Training Accuracy: 88.45%
+Epoch 221, Validation Loss: 0.4101, Validation Accuracy: 96.15%
+Epoch 222, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 222, Training Loss: 0.9093, Training Accuracy: 88.26%
+Epoch 222, Validation Loss: 0.4145, Validation Accuracy: 95.24%
+Epoch 223, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 223, Training Loss: 0.9136, Training Accuracy: 87.72%
+Epoch 223, Validation Loss: 0.4474, Validation Accuracy: 94.79%
+Epoch 224, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 224, Training Loss: 0.9493, Training Accuracy: 86.71%
+Epoch 224, Validation Loss: 0.4195, Validation Accuracy: 95.13%
+Epoch 225, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 225, Training Loss: 0.9489, Training Accuracy: 87.58%
+Epoch 225, Validation Loss: 0.3886, Validation Accuracy: 95.81%
+Epoch 226, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 226, Training Loss: 0.9233, Training Accuracy: 87.68%
+Epoch 226, Validation Loss: 0.4198, Validation Accuracy: 95.70%
+Epoch 227, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 227, Training Loss: 0.9396, Training Accuracy: 87.87%
+Epoch 227, Validation Loss: 0.4109, Validation Accuracy: 95.13%
+Epoch 228, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 228, Training Loss: 0.9232, Training Accuracy: 88.55%
+Epoch 228, Validation Loss: 0.4186, Validation Accuracy: 95.70%
+Epoch 229, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 229, Training Loss: 0.9141, Training Accuracy: 88.21%
+Epoch 229, Validation Loss: 0.3919, Validation Accuracy: 96.49%
+Epoch 230, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 230, Training Loss: 0.9298, Training Accuracy: 88.79%
+Epoch 230, Validation Loss: 0.3752, Validation Accuracy: 96.38%
+Epoch 231, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 231, Training Loss: 0.9060, Training Accuracy: 88.65%
+Epoch 231, Validation Loss: 0.4555, Validation Accuracy: 95.36%
+Epoch 232, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 232, Training Loss: 0.8982, Training Accuracy: 88.60%
+Epoch 232, Validation Loss: 0.4105, Validation Accuracy: 95.47%
+Epoch 233, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 233, Training Loss: 0.9117, Training Accuracy: 87.58%
+Epoch 233, Validation Loss: 0.4204, Validation Accuracy: 95.70%
+Epoch 234, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 234, Training Loss: 0.9189, Training Accuracy: 88.31%
+Epoch 234, Validation Loss: 0.3883, Validation Accuracy: 96.04%
+Epoch 235, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 235, Training Loss: 0.9068, Training Accuracy: 88.21%
+Epoch 235, Validation Loss: 0.4248, Validation Accuracy: 95.47%
+Epoch 236, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 236, Training Loss: 0.9229, Training Accuracy: 89.08%
+Epoch 236, Validation Loss: 0.4633, Validation Accuracy: 94.11%
+Epoch 237, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 237, Training Loss: 0.8835, Training Accuracy: 89.13%
+Epoch 237, Validation Loss: 0.3999, Validation Accuracy: 96.04%
+Epoch 238, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 238, Training Loss: 0.8882, Training Accuracy: 89.18%
+Epoch 238, Validation Loss: 0.4228, Validation Accuracy: 96.15%
+Epoch 239, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 239, Training Loss: 0.8865, Training Accuracy: 88.84%
+Epoch 239, Validation Loss: 0.3873, Validation Accuracy: 95.36%
+Epoch 240, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 240, Training Loss: 0.9045, Training Accuracy: 88.31%
+Epoch 240, Validation Loss: 0.3977, Validation Accuracy: 96.04%
+Epoch 241, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 241, Training Loss: 0.8952, Training Accuracy: 88.60%
+Epoch 241, Validation Loss: 0.4135, Validation Accuracy: 95.13%
+Epoch 242, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 242, Training Loss: 0.8880, Training Accuracy: 88.99%
+Epoch 242, Validation Loss: 0.3764, Validation Accuracy: 96.60%
+Epoch 243, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 243, Training Loss: 0.8833, Training Accuracy: 89.62%
+Epoch 243, Validation Loss: 0.4394, Validation Accuracy: 95.24%
+Epoch 244, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 244, Training Loss: 0.9241, Training Accuracy: 88.06%
+Epoch 244, Validation Loss: 0.4497, Validation Accuracy: 95.02%
+Epoch 245, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 245, Training Loss: 0.9156, Training Accuracy: 88.74%
+Epoch 245, Validation Loss: 0.4297, Validation Accuracy: 95.47%
+Epoch 246, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 246, Training Loss: 0.9010, Training Accuracy: 88.74%
+Epoch 246, Validation Loss: 0.3960, Validation Accuracy: 96.26%
+Epoch 247, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 247, Training Loss: 0.9043, Training Accuracy: 88.60%
+Epoch 247, Validation Loss: 0.3779, Validation Accuracy: 95.70%
+Epoch 248, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 248, Training Loss: 0.8939, Training Accuracy: 87.72%
+Epoch 248, Validation Loss: 0.4171, Validation Accuracy: 95.58%
+Epoch 249, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 249, Training Loss: 0.9039, Training Accuracy: 89.08%
+Epoch 249, Validation Loss: 0.3747, Validation Accuracy: 96.49%
+Epoch 250, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 250, Training Loss: 0.8869, Training Accuracy: 88.84%
+Epoch 250, Validation Loss: 0.4116, Validation Accuracy: 95.92%
+Epoch 251, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 251, Training Loss: 0.8767, Training Accuracy: 89.47%
+Epoch 251, Validation Loss: 0.4046, Validation Accuracy: 95.13%
+Epoch 252, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 252, Training Loss: 0.9079, Training Accuracy: 88.36%
+Epoch 252, Validation Loss: 0.3777, Validation Accuracy: 95.58%
+Epoch 253, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 253, Training Loss: 0.8947, Training Accuracy: 88.84%
+Epoch 253, Validation Loss: 0.4018, Validation Accuracy: 94.90%
+Epoch 254, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 254, Training Loss: 0.8992, Training Accuracy: 88.65%
+Epoch 254, Validation Loss: 0.4041, Validation Accuracy: 95.47%
+Epoch 255, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 255, Training Loss: 0.8866, Training Accuracy: 88.89%
+Epoch 255, Validation Loss: 0.4219, Validation Accuracy: 95.24%
+Epoch 256, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 256, Training Loss: 0.8834, Training Accuracy: 89.03%
+Epoch 256, Validation Loss: 0.4278, Validation Accuracy: 95.24%
+Epoch 257, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 257, Training Loss: 0.8989, Training Accuracy: 88.94%
+Epoch 257, Validation Loss: 0.3934, Validation Accuracy: 95.81%
+Epoch 258, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 258, Training Loss: 0.8907, Training Accuracy: 88.26%
+Epoch 258, Validation Loss: 0.3827, Validation Accuracy: 97.06%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-257.pth
+Epoch 259, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 259, Training Loss: 0.8946, Training Accuracy: 87.92%
+Epoch 259, Validation Loss: 0.3959, Validation Accuracy: 96.15%
+Epoch 260, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 260, Training Loss: 0.8954, Training Accuracy: 88.40%
+Epoch 260, Validation Loss: 0.4390, Validation Accuracy: 94.90%
+Epoch 261, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 261, Training Loss: 0.8616, Training Accuracy: 89.62%
+Epoch 261, Validation Loss: 0.3812, Validation Accuracy: 95.70%
+Epoch 262, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 262, Training Loss: 0.8903, Training Accuracy: 88.55%
+Epoch 262, Validation Loss: 0.3542, Validation Accuracy: 95.92%
+Epoch 263, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 263, Training Loss: 0.9087, Training Accuracy: 88.50%
+Epoch 263, Validation Loss: 0.4077, Validation Accuracy: 95.81%
+Epoch 264, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 264, Training Loss: 0.8784, Training Accuracy: 89.57%
+Epoch 264, Validation Loss: 0.4519, Validation Accuracy: 95.02%
+Epoch 265, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 265, Training Loss: 0.9044, Training Accuracy: 88.16%
+Epoch 265, Validation Loss: 0.4205, Validation Accuracy: 95.92%
+Epoch 266, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 266, Training Loss: 0.8888, Training Accuracy: 88.99%
+Epoch 266, Validation Loss: 0.3971, Validation Accuracy: 94.90%
+Epoch 267, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 267, Training Loss: 0.8911, Training Accuracy: 88.65%
+Epoch 267, Validation Loss: 0.4011, Validation Accuracy: 94.11%
+Epoch 268, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 268, Training Loss: 0.8973, Training Accuracy: 87.87%
+Epoch 268, Validation Loss: 0.4224, Validation Accuracy: 95.81%
+Epoch 269, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 269, Training Loss: 0.8863, Training Accuracy: 89.18%
+Epoch 269, Validation Loss: 0.3873, Validation Accuracy: 96.26%
+Epoch 270, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 270, Training Loss: 0.9100, Training Accuracy: 88.02%
+Epoch 270, Validation Loss: 0.3895, Validation Accuracy: 96.26%
+Epoch 271, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 271, Training Loss: 0.9029, Training Accuracy: 87.77%
+Epoch 271, Validation Loss: 0.3907, Validation Accuracy: 96.26%
+Epoch 272, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 272, Training Loss: 0.8935, Training Accuracy: 89.23%
+Epoch 272, Validation Loss: 0.3787, Validation Accuracy: 95.58%
+Epoch 273, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 273, Training Loss: 0.8984, Training Accuracy: 88.89%
+Epoch 273, Validation Loss: 0.4135, Validation Accuracy: 95.58%
+Epoch 274, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 274, Training Loss: 0.8946, Training Accuracy: 88.31%
+Epoch 274, Validation Loss: 0.3814, Validation Accuracy: 96.04%
+Epoch 275, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 275, Training Loss: 0.8985, Training Accuracy: 87.97%
+Epoch 275, Validation Loss: 0.3947, Validation Accuracy: 95.36%
+Epoch 276, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 276, Training Loss: 0.8934, Training Accuracy: 88.50%
+Epoch 276, Validation Loss: 0.4048, Validation Accuracy: 95.58%
+Epoch 277, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 277, Training Loss: 0.8831, Training Accuracy: 88.65%
+Epoch 277, Validation Loss: 0.4040, Validation Accuracy: 95.24%
+Epoch 278, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 278, Training Loss: 0.8868, Training Accuracy: 89.33%
+Epoch 278, Validation Loss: 0.3719, Validation Accuracy: 95.47%
+Epoch 279, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 279, Training Loss: 0.8848, Training Accuracy: 88.89%
+Epoch 279, Validation Loss: 0.3630, Validation Accuracy: 95.36%
+Epoch 280, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 280, Training Loss: 0.9049, Training Accuracy: 88.36%
+Epoch 280, Validation Loss: 0.3909, Validation Accuracy: 95.13%
+Epoch 281, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_0.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 281, Training Loss: 0.8742, Training Accuracy: 88.79%
+Epoch 281, Validation Loss: 0.3392, Validation Accuracy: 97.28%
+saved checkpoint: D:\code\projects\cs712\data\checkpoints/checkpoint-280.pth
+Epoch 282, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_1.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 282, Training Loss: 0.8575, Training Accuracy: 88.94%
+Epoch 282, Validation Loss: 0.3807, Validation Accuracy: 96.83%
+Epoch 283, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_2.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 283, Training Loss: 0.8832, Training Accuracy: 88.65%
+Epoch 283, Validation Loss: 0.3892, Validation Accuracy: 95.70%
+Epoch 284, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_3.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 284, Training Loss: 0.8781, Training Accuracy: 89.37%
+Epoch 284, Validation Loss: 0.3996, Validation Accuracy: 95.24%
+Epoch 285, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_4.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 285, Training Loss: 0.8641, Training Accuracy: 89.42%
+Epoch 285, Validation Loss: 0.4083, Validation Accuracy: 95.70%
+Epoch 286, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_5.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 286, Training Loss: 0.8944, Training Accuracy: 88.60%
+Epoch 286, Validation Loss: 0.4201, Validation Accuracy: 93.88%
+Epoch 287, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_6.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 287, Training Loss: 0.8680, Training Accuracy: 89.76%
+Epoch 287, Validation Loss: 0.4135, Validation Accuracy: 95.13%
+Epoch 288, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_7.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 288, Training Loss: 0.8934, Training Accuracy: 88.60%
+Epoch 288, Validation Loss: 0.4241, Validation Accuracy: 94.11%
+Epoch 289, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_8.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 289, Training Loss: 0.9018, Training Accuracy: 88.84%
+Epoch 289, Validation Loss: 0.3580, Validation Accuracy: 96.94%
+Epoch 290, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_9.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 290, Training Loss: 0.8765, Training Accuracy: 88.94%
+Epoch 290, Validation Loss: 0.4166, Validation Accuracy: 95.47%
+Epoch 291, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_10.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 291, Training Loss: 0.8833, Training Accuracy: 88.50%
+Epoch 291, Validation Loss: 0.3817, Validation Accuracy: 95.36%
+Epoch 292, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_11.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 292, Training Loss: 0.8554, Training Accuracy: 90.93%
+Epoch 292, Validation Loss: 0.4098, Validation Accuracy: 95.13%
+Epoch 293, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_12.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 293, Training Loss: 0.8923, Training Accuracy: 88.11%
+Epoch 293, Validation Loss: 0.4067, Validation Accuracy: 96.04%
+Epoch 294, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_13.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 294, Training Loss: 0.8519, Training Accuracy: 90.05%
+Epoch 294, Validation Loss: 0.3959, Validation Accuracy: 95.47%
+Epoch 295, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_14.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 295, Training Loss: 0.8657, Training Accuracy: 89.13%
+Epoch 295, Validation Loss: 0.4005, Validation Accuracy: 95.58%
+Epoch 296, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_15.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 296, Training Loss: 0.8819, Training Accuracy: 89.03%
+Epoch 296, Validation Loss: 0.3918, Validation Accuracy: 95.81%
+Epoch 297, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_16.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 297, Training Loss: 0.8827, Training Accuracy: 88.65%
+Epoch 297, Validation Loss: 0.3699, Validation Accuracy: 96.49%
+Epoch 298, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_17.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 298, Training Loss: 0.8690, Training Accuracy: 89.47%
+Epoch 298, Validation Loss: 0.4150, Validation Accuracy: 96.15%
+Epoch 299, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_18.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 299, Training Loss: 0.8782, Training Accuracy: 89.42%
+Epoch 299, Validation Loss: 0.4029, Validation Accuracy: 94.56%
+Epoch 300, Learning rate: 0.0000100000
+loaded training data from: data/distance_timm_preprocessed_train_19.npy
+dataset len: 2944
+train_set len: 2061
+val_set len: 883
+Epoch 300, Training Loss: 0.8779, Training Accuracy: 87.24%
+Epoch 300, Validation Loss: 0.4038, Validation Accuracy: 95.92%
+Best epoch 281, Highest Validation Accuracy: 97.28%
