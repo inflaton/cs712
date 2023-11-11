@@ -117,7 +117,7 @@ else:
 print(f"device: {device}")
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-b", "--batch", type=int, help="Batch size", default=64)
+parser.add_argument("-b", "--batch", type=int, help="Batch size", default=16)
 parser.add_argument(
     "-c",
     "--checkpoint",

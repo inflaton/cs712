@@ -1,0 +1,8 @@
+device: cuda
+checkpoint:  -1 batch_size:  16 name:  test
+loaded validation data from: data/distance_timm_preprocessed_test.npy
+loading checkpoint: 280
+loaded checkpoint: /home/inflaton/code/projects/cs712/data/checkpoints/checkpoint-280.pth
+loaded training data from: data/distance_timm_preprocessed_train.npy
+checkpoint:280 - final accuracy:96.467%
+results saved to: data/test-result.zip
